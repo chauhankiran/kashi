@@ -1,0 +1,51 @@
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+}
+
+pre {
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: auto;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+img {
+    vertical-align: middle;
+}
