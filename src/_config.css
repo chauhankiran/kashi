@@ -1,0 +1,40 @@
+/**
+ * _config.css is part of Kashi framework.
+ * version 0.0.1
+ * Kiran Chauhan <kiranchauhan68@gmail.com>
+ * Licensed under GNU GPL v3.0 or later
+**/
+
+:root {
+    --brand-color: #3689e6;
+    --brand-color-dark: 0d52bf;
+    --background-color: #fff;
+    --text-color: #333333;
+    --text-color-dark: #1a1a1a;
+    --secondary-color: #abacae;
+    --secondary-color-dark: #7e8087;
+    --link-color: #c6262e;
+    --link-color-dark: #a10705;
+
+    --font-serif: 'Merriweather', serif;
+    --font-sans-serif: 'Merriweather Sans', sans-serif;
+    --font-monospace: 'Inconsolata', monospace;
+
+    --default-font-size: 1rem;
+    --default-line-height: 1.5;
+
+    --large-default-font-size: 1.3rem;
+    --small-default-font-size: 0.7rem;
+
+    --font-italic: italic;
+    --font-bold: bold;
+    --font-normal: normal;
+    --font-thin: thin;
+
+    --default-header-one-font-size: 2.5rem;
+    --default-header-two-font-size: 2rem;
+    --default-header-three-font-size: 1.5rem;
+    --default-header-four-font-size: 1rem;
+    --default-header-five-font-size: 0.9rem;
+    --default-header-six-font-size: 0.8rem;
+}

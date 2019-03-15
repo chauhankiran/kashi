@@ -135,7 +135,7 @@ img {
 }
 ```
 
-That's it. This is my `_reboot.css`. `_` in name is just styling purpose you can make it as `_reboot.css` or `reboot.css`. Doesn't make any difference.
+That's it. This is my `_reboot.css`. `_` in name is just styling purpose you can make it as `_reboot.css` or `reboot.css`. Doesn't make any difference. But, as part of naming convention this means this file is not going to be used as stylesheet with link.
 
 I have taken following references while creating this `_reboot.css`.
 
@@ -144,3 +144,115 @@ I have taken following references while creating this `_reboot.css`.
 3. [Normalize.css](https://necolas.github.io/normalize.css/8.0.0/normalize.css)
 4. [Bootstrap's Reboot](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss)
 5. [UIKit's Base](https://github.com/uikit/uikit/blob/develop/src/scss/components/base.scss)
+
+## Configuration
+
+The next file we need for our Kashi is `_config.css` file. This file will contains set of variables and some configurations for Kashi framework. Using this file we can customize the look-n-feel of our framework. We will edit this file in future again if we need to configuration something as part of global configuration.
+
+Let’s start with _colors_. We need one color palette to give a mining of information. But, As I mentioned earlier that I'm not creating a fully feature framework so the colors will be limited to -
+
+* brand color
+* background color
+* text color
+* gray color for displaying less important information
+* link color
+
+We also need light/dark color of above color to display some effect such as link hover, focus or button click or something.
+
+You can use any color you would like but I am currently using elementary‘s color palette for following colors. You are free to use any colors you would like –
+
+* brand-color: #3689e6      ( shade of blue )
+* background-color: #fff    ( white as background )
+* text-color: #333333       ( shade of black )
+* gray-color: #abacae       ( shade of gray )
+* link-color: #c6262e       ( shade of red! )
+
+Here, I have used these colors. There is no special choice or consideration I have used to use these color to inviting hacking the Kashi.
+
+Also, I'm going to use dark shade of these colors to go with effect. I'm choosing `700` of color given colors so it will become ( except white ),
+
+* brand-color: #3689e6, #0d52bf      ( shade of blue )
+* background-color: #fff            ( white as background )
+* text-color: #333333, #1a1a1a       ( shade of black )
+* gray-color: #abacae, #7e8087       ( shade of gray )
+* link-color: #c6262e, #a10705       ( shade of red! )
+
+CSS support the variable declaration. I need these variables throughout the framework. So first I'm going to define,
+
+```css
+:root {
+
+}
+```
+
+Now inside of `:root` I'm going to define these colors.
+
+```css
+:root {
+    --brand-color: #3689e6;
+    --brand-color-dark: 0d52bf;
+    --background-color: #fff;
+    --text-color: #333333;
+    --text-color-dark: #1a1a1a;
+    --secondary-color: #abacae;
+    --secondary-color-dark: #7e8087;
+    --link-color: #c6262e;
+    --link-color-dark: #a10705;
+}
+```
+
+I've used name `secondary-color` instead of `gray-color` to just make name less dependable on color. These are the colors we are going to use at different places.
+
+Looks like we are done with colors! It is time to define default for fonts.
+
+Let’s first starts with font-family and we can have three types of font-familys, So –
+
+```css
+--font-serif: 'Merriweather', serif;
+--font-sans-serif: 'Merriweather Sans', sans-serif;
+--font-monospace: 'Inconsolata', monospace;
+```
+
+( I will use Google’s fonts URL to include this fonts in Kashi. But, that part comes later. )
+
+While working with fonts, let’s define a default font-size as well.
+
+```css
+--default-font-size: 1rem;
+--default-line-height: 1.5
+```
+
+I thought it is good to define a line-height with this single line!
+
+We have default font-size. Now, We can also have large font size and small font size as well. I with go with +/- 0.3rem. So –
+
+```css
+--large-default-font-size: 1.3rem;
+--small-default-font-size: 0.7rem;
+```
+
+Defining few font styles wouldn’t hurt. So, –
+
+```css
+--font-italic: italic;
+--font-bold: bold;
+--font-normal: normal;
+--font-thin: thin;
+```
+
+Looks like we done with default colors, fonts and text.
+
+Let me complete this config file with default font-size for headers. You are welcome to use any font-size you like.
+
+My calculation is – starts from `h4` with the same size as default font have and then continue increase the size with .5. Last two `h5` and `h6` will be decrease by `.1`.
+
+```css
+--default-header-one-font-size: 2.5rem;
+--default-header-two-font-size: 2rem;
+--default-header-three-font-size: 1.5rem;
+--default-header-four-font-size: 1rem;
+--default-header-five-font-size: 0.9rem;
+--default-header-six-font-size: 0.8rem;
+```
+
+That’s it. This was our `_config.scss`. But, remember we will touch this file again future if we thing something need to be hackable!
