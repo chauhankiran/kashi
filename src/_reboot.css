@@ -1,3 +1,10 @@
+/**
+ * _reboot.css is part of Kashi framework.
+ * version 0.0.1
+ * Kiran Chauhan <kiranchauhan68@gmail.com>
+ * Licensed under GNU GPL v3.0 or later
+**/
+
 *::before,
 *::after {
     -webkit-box-sizing: border-box;
