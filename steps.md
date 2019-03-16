@@ -256,3 +256,53 @@ My calculation is – starts from `h4` with the same size as default font have a
 ```
 
 That’s it. This was our `_config.scss`. But, remember we will touch this file again future if we thing something need to be hackable!
+
+## Testing
+
+Before I go further and develop another Kashi component, let me pause for a moment and do some arrangement for testing because I yet do not know how all these looks except theoretically. So, I'm going to create a `test` folder and inside of it, I'm going to create a `_module.html` file that will going to be used as development testing.
+
+```bash
+$ mdkir test
+$ cd test
+$ touch _module.html
+```
+
+Inside of this, `_module.html` file, I've written following content -
+
+```html
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kashi: Modules Testing</title>
+
+        <!-- Development testing... -->
+        <link href="../src/kashi.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Kashi</h1>
+            <p>A minimal CSS framework for bajana!</p>
+        </header>
+    </body>
+</html>
+```
+
+Here, I've used `kashi.css` file from `src` folder. But, I don't have that file. So, let me first create one -
+
+```bash
+$ cd ../src
+$ touch kashi.css
+```
+
+And inside of this file I'm going to write following code -
+
+```css
+@import "_reboot.css";
+@import "_config.css";
+```
+
+This will include both created file inside of `kashi.css` that ultimately make my style working. Running this `_module.html` in Firefox looks working for me.
+
+Onward now, to test new component, I'll going to create another file and going to include in this `kashi.css` file.
