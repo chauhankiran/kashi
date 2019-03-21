@@ -306,3 +306,178 @@ And inside of this file I'm going to write following code -
 This will include both created file inside of `kashi.css` that ultimately make my style working. Running this `_module.html` in Firefox looks working for me.
 
 Onward now, to test new component, I'll going to create another file and going to include in this `kashi.css` file.
+
+## Typography
+
+Let's create a new file with name `_typo.css` and include it in main `kashi.css` file.
+
+```css
+@import "_reboot.css";
+@import "_config.css";
+@import "_typo.css";
+```
+
+In this file we will touch the important aspect of beautiful website - typography. You know what elements comes within this category. For example, header army. We need our header with consistent look and with consistent weight. Too bold are nowadays is not considered as good design practice. Also, these borders have lots of space around them in terms of `margin` we also need to reduce it. So, inside of `_typo.css` let's first target all header tags and reduce the `margin` and setting-up the `font-weight`.
+
+```css
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+```
+
+But, I the chances are high that you might not agree with this `font-weight`. You want may be `600` or may be `700` or something. So, I think it is better to place this inside of variable. So, adding one more variable inside of `_config.css` doesn't hurt us.
+
+```css
+...
+...
+
+
+    --default-header-font-weight:  400;
+    --default-header-one-font-size: 2.5rem;
+    --default-header-two-font-size: 2rem;
+    --default-header-three-font-size: 1.5rem;
+    --default-header-four-font-size: 1rem;
+    --default-header-five-font-size: 0.9rem;
+    --default-header-six-font-size: 0.8rem;
+}
+```
+
+Ok, now let's add this variable to define the weight of header.
+
+```css
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--default-header-font-weight);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+```
+
+Next, we are going to set the `font-size` of header and for that I've already create variables for them.
+
+```css
+h1 {
+    font-size: var(--default-header-one-font-size);
+}
+h2 {
+    font-size: var(--default-header-two-font-size);
+}
+h3 {
+    font-size: var(--default-header-three-font-size);
+}
+h4 {
+    font-size: var(--default-header-four-font-size);
+}
+h5 {
+    font-size: var(--default-header-five-font-size);
+}
+h6 {
+    font-size: var(--default-header-six-font-size);
+}
+```
+
+Now, let's address the `p` tag by defining `font-size` of it and reducing margin around it.
+
+```css
+p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+```
+
+We also nave `address` tag that should have same design like `p` so,
+
+```css
+address,
+p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+```
+
+Chances are high that we need tag with different font-size than what we have with paragraph. For lead text, we might need text with big font size where as `small` with small font size. Adding those should make,
+
+```css
+.big-text {
+    font-size: var(--large-default-font-size);
+}
+.small-text {
+    font-size: var(--small-default-font-size);
+}
+```
+
+Also, we have `small` tag. That should be same as small text so.
+
+```css
+.big-text {
+    font-size: var(--large-default-font-size);
+}
+small,
+.small-text {
+    font-size: var(--small-default-font-size);
+}
+```
+
+Next we need to address link or anchor tag. Let's first set the color for link and color for hover.
+
+```css
+a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-color-dark);
+}
+```
+
+Next, I'm not big fan of removal of underline as that make link _the_ link. But, its okay to remove underline on hover. So,
+
+```css
+a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-color-dark);
+    text-decoration: none;
+}
+```
+
+After that let's confirm the underline by redefining it as,
+
+```css
+u {
+    text-decoration: underline;
+}
+```
+
+Also need to define boldness by,
+
+```css
+b,
+strong {
+    font-weight: var(--font-bold);
+}
+```
+
+And for italic-ness,
+
+```css
+i,
+em {
+    font-style: var(--font-italic);
+}
+```
+
+Looks like we are done with typography.

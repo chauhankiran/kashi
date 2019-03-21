@@ -7,7 +7,7 @@
 
 :root {
     --brand-color: #3689e6;
-    --brand-color-dark: 0d52bf;
+    --brand-color-dark: #0d52bf;
     --background-color: #fff;
     --text-color: #333333;
     --text-color-dark: #1a1a1a;
@@ -31,6 +31,7 @@
     --font-normal: normal;
     --font-thin: thin;
 
+    --default-header-font-weight:  400;
     --default-header-one-font-size: 2.5rem;
     --default-header-two-font-size: 2rem;
     --default-header-three-font-size: 1.5rem;

@@ -1,0 +1,65 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--default-header-font-weight);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+h1 {
+    font-size: var(--default-header-one-font-size);
+}
+h2 {
+    font-size: var(--default-header-two-font-size);
+}
+h3 {
+    font-size: var(--default-header-three-font-size);
+}
+h4 {
+    font-size: var(--default-header-four-font-size);
+}
+h5 {
+    font-size: var(--default-header-five-font-size);
+}
+h6 {
+    font-size: var(--default-header-six-font-size);
+}
+
+address,
+p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.big-text {
+    font-size: var(--large-default-font-size);
+}
+small,
+.small-text {
+    font-size: var(--small-default-font-size);
+}
+
+a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-color-dark);
+    text-decoration: none;
+}
+
+u {
+    text-decoration: underline;
+}
+
+b,
+strong {
+    font-weight: var(--font-bold);
+}
+
+i,
+em {
+    font-style: var(--font-italic);
+}
