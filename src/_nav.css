@@ -1,0 +1,34 @@
+.nav {
+    border-bottom: .1rem solid #ddd;
+    display: flex;
+    min-height: 4rem;
+    align-items: stretch;
+}
+.nav-left,
+.nav-center,
+.nav-right {
+    display: flex;
+    flex: 1;
+}
+.nav-left {
+    justify-content: flex-start;
+}
+.nav-center {
+    justify-content: center;
+}
+.nav-right {
+    justify-content: flex-end;
+}
+.nav .brand,
+.nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #0053cc;
+}
+.nav .brand {
+    font-size: 1.75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
