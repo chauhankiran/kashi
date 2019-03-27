@@ -1,0 +1,70 @@
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+
+.text-regular {
+    font-style: normal;
+    font-weight: normal;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-italic {
+    font-style: italic;
+}
+.text-thin {
+    font-weight: thin;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.ractangle {
+    border-radius: 0;
+}
+.rounded {
+    border-radius: .5rem;
+}
+.circle {
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
+.invisible {
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
