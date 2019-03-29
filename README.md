@@ -1,6 +1,12 @@
 # kashi
 
-A minimal stylesheet for bajana!
+> A small hackable style framework
+
+## Getting Started
+
+## Hacking
+
+## Examples/Themes
 
 ## License
 
