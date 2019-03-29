@@ -17,24 +17,27 @@
  * along with Kashi. If not, see <https://www.gnu.org/licenses/>.
 **/
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 1rem;
-    overflow-x: auto;
-}
+// TODO.
+// 1. Variable for table border color.
+// 2. Variable for table row hover color.
+
+table
+  border-collapse collapse
+  width 100%
+  margin-bottom 1rem
+  overflow-x auto
+
 th,
-td {
-    padding: .75rem;
-    border-top: 1px solid #dee2e6;
-}
-thead th {
-    border-bottom: 2px solid #ddd;
-    text-align: inherit;
-}
-.table-bordered {
-    border: 1px solid #dee2e6;
-}
-.table-hover tbody tr:hover {
-    background-color: rgba(0,0,0,.075)
-}
+td
+  padding .75rem
+  border-top 1px solid #dee2e6
+
+thead th
+  border-bottom 2px solid #ddd
+  text-align inherit
+
+.table-bordered
+  border 1px solid #dee2e6
+
+.table-hover tbody tr:hover
+  background-color rgba(0,0,0,.075)
