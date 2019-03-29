@@ -1,0 +1,57 @@
+/**
+ * Copyright (c) 2019 Kiran Chauhan (https://chauhankiran.github.io)
+ *
+ * This file is part of Kashi.
+ *
+ * Kashi is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Kashi is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Kashi. If not, see <https://www.gnu.org/licenses/>.
+**/
+
+// TODO:
+// 1. Create a variable for .nav class. So, that one can hack the class name prifix. $nav-prefix = nav
+// 2. Create a variable for min-height of .nav.
+// 3. Create a variable for .brand
+
+.nav
+  border-bottom .1rem solid #ddd
+  display flex
+  min-height 4rem
+  align-items stretch
+
+.nav-left,
+.nav-center,
+.nav-right
+  display flex
+  flex 1
+
+.nav-left
+  justify-content flex-start
+
+.nav-center
+  justify-content center
+
+.nav-right
+  justify-content flex-end
+
+.nav .brand,
+.nav a
+  text-decoration none
+  display flex
+  align-items center
+  padding 1rem 2rem
+  color #0053cc
+
+.nav .brand
+  font-size 1.75rem
+  padding-top 0
+  padding-bottom 0
