@@ -4,12 +4,8 @@
 
 .container
   width 100%
-  max-width 1140px
+  max-width grid-width
   margin 0 auto
-
-// TODO: Remove columns variable from here and place into common config.
-columns = 12
-
 
 .row
   display flex
@@ -20,9 +16,9 @@ columns = 12
 .col
   flex 1
 
-for column in 1..columns
+for column in 1..grid-columns
   .col-{column}
-    width ((column / columns) * 100)%
+    width ((column / grid-columns) * 100)%
 
 @media screen and (max-width: 768px) {
   .col,

@@ -8,31 +8,31 @@ h3,
 h4,
 h5,
 h6
-  font-weight 400
+  font-weight header-font-weight
   margin-top 0.5rem
   margin-bottom 0.5rem
 
 // font size.
-headers-font-size = 2.5rem, 2rem, 1.5rem, 1rem, .9rem, .8rem
+headers-font-size = h1-font-size, h2-font-size, h3-font-size, h4-font-size, h5-font-size, h6-font-size
 for header-font-size, header-type in headers-font-size
   h{header-type + 1}
     font-size header-font-size
 
 address,
 p
-  font-size 1rem
+  font-size font-size
   margin-top 0
   margin-bottom 1rem
 
-small,
-  font-size .7rem
+small
+  font-size small-font-size
 
 a
-  color #c6262e
+  color blue
+  text-decoration none
 
 a:hover
-  color #a10705
-  text-decoration none
+  color lighten(blue, 30%)
 
 u
   text-decoration underline
