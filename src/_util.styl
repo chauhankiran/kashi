@@ -1,33 +1,40 @@
-/**
- * Copyright (c) 2019 Kiran Chauhan (https://chauhankiran.github.io)
- *
- * This file is part of Kashi.
- *
- * Kashi is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * Kashi is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with Kashi. If not, see <https://www.gnu.org/licenses/>.
-**/
+// Kashi
+// Copyright 2019 Kiran Chauhan
+// Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
 
-.text-left
-  text-align left
+// Text align options.
+text-alignment-options = left, center, right, justify
+for text-alignment-option in text-alignment-options
+  .text-{text-alignment-option}
+    text-align: text-alignment-option
 
-.text-center
-  text-align center
+// Text transform options.
+text-transform-options = lowercase, uppercase, capitalize
+for text-transform-option in text-transform-options
+  .text-{text-transform-option}
+    text-transform text-transform-option
 
-.text-right
-  text-align right
+// Text display options.
+text-display-options = block, inline-block, inline, none
+for text-display-option in text-display-options
+  .{text-display-option}
+    display text-display-option
 
-.text-justify
-  text-align justify
+// Text shape options.
+text-shape-options = {
+  ractangle:  0,
+  rounded: .5rem
+  circle: 50%
+}
+for text-shape-option, text-shape-value in text-shape-options
+  .{text-shape-option}
+    border-radius: text-shape-value
+
+// Text floating options.
+text-float-options = left, right
+for text-float-option in text-float-options
+  .{text-float-option}
+    float text-float-option
 
 .text-regular
   font-style normal
@@ -42,41 +49,5 @@
 .text-thin
   font-weight thin
 
-.text-lowercase
-  text-transform lowercase
-
-.text-uppercase
-  text-transform uppercase
-
-.text-capitalize
-  text-transform capitalize
-
-.block
-  display block
-
-.inline
-  display inline
-
-.inline-block
-  display inline-block
-
-.ractangle
-  border-radius 0
-
-.rounded
-  border-radius .5rem
-
-.circle
-  border-radius 50%
-
-.hidden
-  display none
-
 .invisible
   visibility hidden
-
-.left
-  float left
-
-.right
-  float right
