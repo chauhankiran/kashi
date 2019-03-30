@@ -6,7 +6,7 @@
 // Variable for hover item.
 // Variable for active item.
 
-.list-group
+.list-container
   list-style-type none
   padding-left 0
   display flex
@@ -19,36 +19,31 @@
   border 1px solid rgba(0,0,0,.125)
   margin-bottom -1px
 
-.list-item:first-child
-  border-top-left-radius .25rem
-  border-top-right-radius .25rem
+  &:first-child
+    border-top-left-radius .25rem
+    border-top-right-radius .25rem
 
-.list-item:last-child
-  border-bottom-left-radius .25rem
-  border-bottom-right-radius .25rem
+  &:last-child
+    border-bottom-left-radius .25rem
+    border-bottom-right-radius .25rem
 
+  &.active
+    background-color #0052cc
+    color #fff
 
-.list-item.active
-  background-color #0052cc
-  color #fff
+  &.disabled
+    color #6c757d
 
-.list-item.disabled
-  color #6c757d
+  &:not(.active):hover
+    background-color #ddd
 
-.list-item:not(.active):hover
-  background-color #ddd
+  & h3,
+  & p
+    margin-top 0
+    margin-bottom .25rem
 
+  & small
+    color #6c757d
 
-.list-item h3
-  margin-top 0
-  margin-bottom .25rem
-
-.list-item p
-  margin-top 0
-  margin-bottom .25rem
-
-.list-item small
-  color #6c757d
-
-.list-item.active small
-  color #fff
+  &.active small
+    color #fff

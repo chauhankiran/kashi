@@ -12,23 +12,11 @@ h6
   margin-top 0.5rem
   margin-bottom 0.5rem
 
-h1
-  font-size 2.5rem
-
-h2
-  font-size 2rem
-
-h3
-  font-size 1.5rem
-
-h4
-  font-size 1rem
-
-h5
-  font-size .9rem
-
-h6
-  font-size .8rem
+// font size.
+headers-font-size = 2.5rem, 2rem, 1.5rem, 1rem, .9rem, .8rem
+for header-font-size, header-type in headers-font-size
+  h{header-type + 1}
+    font-size header-font-size
 
 address,
 p
@@ -36,11 +24,7 @@ p
   margin-top 0
   margin-bottom 1rem
 
-.big-text
-  font-size 1.3rem
-
 small,
-.small-text
   font-size .7rem
 
 a
