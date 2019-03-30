@@ -1,0 +1,123 @@
+/**
+ * Copyright (c) 2019 Kiran Chauhan (https://chauhankiran.github.io)
+ *
+ * This file is part of Kashi.
+ *
+ * Kashi is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Kashi is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Kashi. If not, see <https://www.gnu.org/licenses/>.
+**/
+
+.button
+  -webkit-appearance: none;
+  background-color: #425563;
+  box-shadow: 0 4px 0 #232e35;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer !important;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 8px 12px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: auto;
+
+.button::-moz-focus-inner
+  border: 0;
+  padding: 0;
+
+.button:hover,
+.button:focus
+  background-color #384854
+
+.button:link,
+.button:visited,
+.button:active,
+.button:hover
+  color #ffffff
+  text-decoration none
+
+.button:active
+  box-shadow none
+  top 4px
+
+.button::before
+  background transparent
+  bottom -6px
+  content ''
+  display block
+  left -2px
+  position absolute
+  right -2px
+  top -2px
+
+.button:active::before
+  top -6px
+
+.button-primary
+  background-color #007f3b
+  box-shadow 0 4px 0 #003317
+
+.button-primary:hover,
+.button-primary:focus
+  background-color #00662f
+
+/* Disabled */
+.button[disabled="disabled"],
+.button[disabled]
+  background-color #425563
+  opacity 0.5
+  pointer-events none
+
+.button[disabled="disabled"]:hover,
+.button[disabled]:hover
+  background-color #425563
+  cursor default
+
+.button[disabled="disabled"]:focus,
+.button[disabled]:focus
+  outline none
+
+.button[disabled="disabled"]:active,
+.button[disabled]:active
+  box-shadow 0 4px 0 #232e35
+  top 0
+
+/* Primary disabled button */
+.button-primary[disabled="disabled"],
+.button-primary[disabled]
+  background-color #007f3b
+  opacity 0.5
+  pointer-events none
+
+.button-primary:hover,
+.button-primary[disabled="disabled"]:hover,
+.button-primary[disabled]:hover
+  background-color #007f3b
+  cursor default
+
+.button-primary[disabled="disabled"]:focus,
+.button-primary[disabled]:focus
+  background-color #007f3b
+  outline none
+
+.button-primary[disabled="disabled"]:active,
+.button-primary[disabled]:active
+  box-shadow 0 4px 0 #003317
+  top 0
+
+.button-large
+  width 100%
+  display block
