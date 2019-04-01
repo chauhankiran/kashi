@@ -3,28 +3,24 @@
 // Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
 
 .container
-  width 100%
-  max-width grid-width
-  margin 0 auto
+    width 100%
+    max-width grid-width
+    margin 0 auto
 
 .row
-  display flex
-  flex-flow row wrap
-  justify-content flex-start
-  width 100%
+    display flex
+    flex-flow row wrap
+    justify-content space-between
 
-.col
-  flex 1
+.col // Magic column.
+    flex 1
 
-for column in 1..grid-columns
-  .col-{column}
-    width ((column / grid-columns) * 100)%
+for col in 1..cols
+    .col-{col}
+        width ((col / cols) * 100)%
 
-@media screen and (max-width: 768px) {
-  .col,
-  [class^='col-'],
-  [class*=" col-"] {
-    flex-grow: 0;
-    flex-basis: 100%;
-  }
-}
+@media sreen and ( max-width: mobile-grid-width )
+    .col,
+    [class^='col']
+        flex-grow 0
+        flex-basis 100%

@@ -2,45 +2,29 @@
 // Copyright 2019 Kiran Chauhan
 // Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-  font-weight header-font-weight
-  margin-top 0.5rem
-  margin-bottom 0.5rem
+for header in (1..6)
+    h{header}
+        font-weight header-font-weight
+        margin-top .5rem
+        margin-bottom .5rem
 
-// font size.
-headers-font-size = h1-font-size, h2-font-size, h3-font-size, h4-font-size, h5-font-size, h6-font-size
-for header-font-size, header-type in headers-font-size
-  h{header-type + 1}
-    font-size header-font-size
+headers = h1-size, h2-size, h3-size, h4-size, h5-size, h6-size
+for header, type in headers
+    h{type + 1}
+        font-size header
 
 address,
 p
-  font-size font-size
-  margin-top 0
-  margin-bottom 1rem
+    font-size font-size
+    margin-top 0
+    margin-bottom font-size
 
 small
-  font-size small-font-size
+    font-size small-font-size
 
 a
-  color blue
-  text-decoration none
+    color brand
+    text-decoration none
 
 a:hover
-  color lighten(blue, 30%)
-
-u
-  text-decoration underline
-
-b,
-strong
-  font-weight 700
-
-i,
-em
-  font-style italic
+    color darken(brand, 10%)

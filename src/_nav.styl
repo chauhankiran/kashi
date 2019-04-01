@@ -2,41 +2,35 @@
 // Copyright 2019 Kiran Chauhan
 // Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
 
-// TODO:
-// 1. Create a variable for .nav class. So, that one can hack the class name prifix. $nav-prefix = nav
-// 2. Create a variable for min-height of .nav.
-// 3. Create a variable for .brand
-
 .nav
-  border-bottom .1rem solid #ddd
-  display flex
-  min-height 4rem
-  align-items stretch
+    display flex
+    min-height nav-height
+    align-items stretch
 
 .nav-left,
 .nav-center,
 .nav-right
-  display flex
-  flex 1
+    display flex
+    flex 1
 
 .nav-left
-  justify-content flex-start
+    justify-content flex-start
 
 .nav-center
-  justify-content center
+    justify-content center
 
 .nav-right
-  justify-content flex-end
+    justify-content right
 
-.nav .brand,
-.nav a
-  text-decoration none
-  display flex
-  align-items center
-  padding 1rem 2rem
-  color #0053cc
+.nav a,
+.nav .brand
+    display flex
+    align-items center
+    padding nav-items-padding
+    color brand
+    text-decoration none
 
 .nav .brand
-  font-size 1.75rem
-  padding-top 0
-  padding-bottom 0
+    font-size nav-brand-size
+    padding-top 0
+    padding-bottom 0
