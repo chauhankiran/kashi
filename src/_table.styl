@@ -2,27 +2,22 @@
 // Copyright 2019 Kiran Chauhan
 // Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
 
-// TODO.
-// 1. Variable for table border color.
-// 2. Variable for table row hover color.
-
 table
   border-collapse collapse
   width 100%
-  margin-bottom 1rem
   overflow-x auto
 
 th,
 td
   padding .75rem
-  border-top 1px solid #dee2e6
+  border-top 1px solid black
 
 thead th
-  border-bottom 2px solid #ddd
+  border-bottom 2px solid black
   text-align inherit
 
 .table-bordered
-  border 1px solid #dee2e6
+  border 1px solid black
 
 .table-hover tbody tr:hover
-  background-color rgba(0,0,0,.075)
+  background-color lighten(black, 96%)
