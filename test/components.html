@@ -11,52 +11,164 @@
                 max-width: 768px;
             }
             .grid-box {
-                background-color: #e4e4e4;
-                height: 50px;
-                vertical-align: middle;
-                justify-content: center;
-                align-items: center;
+                padding-top: .75rem;
+                padding-bottom: .75rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                background-color: rgba(86,61,124,.15);
+                border: 1px solid rgba(86,61,124,.2);
             }
-        </style>
+           </style>
     </head>
     <body>
-        <header class="text-center">
-            <h1>
-                <a href="https://github.com/chauhankiran/kashi">Kashi</a>
-            </h1>
-            <p class="text-italic">A small hackable style framework</p>
+        <header class="container">
+            <h1>Kashi</h1>
+            <p>A small <a href="#">hackable</a> style framework</p>
+
+            <nav class="nav">
+                <a href="#" class="brand">Home</a>
+                <a href="#">About</a>
+                <a href="#" class="nav-right">GitHub</a>
+            </nav>
         </header>
-        <main>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <h1>H1 Heading</h1>
-                        <h2>H2 Heading</h2>
-                        <h3>H3 Heading</h3>
-                        <h4>H4 Heading</h4>
-                        <h5>H5 Heading</h5>
-                        <h6>H6 Heading</h6>
-                    </div>
-                    <div class="col-6">
-                        <p>Paragraph</p>
-                        <p><b>Bold</b> <strong>Strong</strong></p>
-                        <p><i>Italic</i> <em>Italic</em></p>
-                        <p><a href="#">Links</a></p>
-                    </div>
-                </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3 grid-box">col-3</div>
+                <div class="col-3 grid-box">col-3</div>
+                <div class="col-3 grid-box">col-3</div>
+                <div class="col-3 grid-box">col-3</div>
             </div>
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-4 grid-box">col-4</div>
-                    <div class="col-4 grid-box">col-4</div>
-                    <div class="col-4 grid-box">col-4</div>
-                </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3 grid-box">col-3</div>
+                <div class="col-6 grid-box">col-6</div>
+                <div class="col-3 grid-box">col-3</div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div><button class="button">Button</button>
-                </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2 grid-box">col-2</div>
+                <div class="col-10 grid-box">col-10</div>
             </div>
-        </main>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col grid-box">col</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col-1 grid-box">col-1</div>
+                <div class="col grid-box">col</div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+            <table class="table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Kiran</td>
+                        <td>chauhankiran</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jack</td>
+                        <td>sparrow</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            <a href="#" class="btn">Home</a>
+            <button class="btn">Submit</button>
+
+            <a href="#" class="btn btn-brand">Home</a>
+            <button class="btn btn-brand">Submit</button>
+
+            <a href="#" class="btn disabled">Home</a>
+            <button class="btn" disabled>Submit</button>
+
+            <a href="#" class="btn btn-brand disabled">Home</a>
+            <button class="btn btn-brand" disabled>Submit</button>
+
+            <a href="#" class="btn btn-lg">Home</a>
+            <button class="btn btn-lg">Submit</button>
+
+            <a href="#" class="btn btn-brand btn-lg">Home</a>
+            <button class="btn btn-brand btn-lg">Submit</button>
+        </div>
+
+        <div class="container">
+            <ul class="list">
+                <li class="list-item">This is the first item in list</li>
+                <li class="list-item active">This is the second item in list</li>
+                <li class="list-item">This is the third item in collection</li>
+                <li class="list-item disabled">This is the forth item in collection</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <input type="text" id="firstName" name="first name" class="npt" placeholder="first name">
+
+            <input type="text" name="last name" class="npt npt-primary" placeholder="last name">
+
+            <input type="text" name="email" class="npt npt-primary npt-lg" placeholder="email">
+
+            <input type="text" id="firstName" name="first name" class="npt" placeholder="first name" disabled>
+
+            <input type="text" name="last name" class="npt npt-primary" placeholder="last name" disabled>
+
+            <select class="slct">
+                <option>Black with Green</option>
+                <option>Black with Yellow</option>
+                <option>Black with Gray</option>
+                <option>Choose Custom...</option>
+            </select>
+
+            <select class="slct slct-brand">
+                <option>Black with Green</option>
+                <option>Black with Yellow</option>
+                <option>Black with Gray</option>
+                <option>Choose Custom...</option>
+            </select>
+
+            <select class="slct slct-brand slct-lg">
+                <option>Black with Green</option>
+                <option>Black with Yellow</option>
+                <option>Black with Gray</option>
+                <option>Choose Custom...</option>
+            </select>
+        </div>
+        <br><br><br>
     </body>
 </html>
