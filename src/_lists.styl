@@ -2,48 +2,33 @@
 // Copyright 2019 Kiran Chauhan
 // Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
 
-// TODO:
-// Variable for hover item.
-// Variable for active item.
-
-.list-container
+.list
   list-style-type none
   padding-left 0
   display flex
   flex-direction column
 
 .list-item
-  background-color #fff
+  background-color white
   display block
   padding .75rem 1.25rem
-  border 1px solid rgba(0,0,0,.125)
+  border 1px solid lighten(black, 90%)
   margin-bottom -1px
-
+    
   &:first-child
     border-top-left-radius .25rem
     border-top-right-radius .25rem
-
+    
   &:last-child
     border-bottom-left-radius .25rem
     border-bottom-right-radius .25rem
 
   &.active
-    background-color #0052cc
-    color #fff
+    background-color lighten(brand, 40%)
+    color white
 
   &.disabled
-    color #6c757d
+    opacity .5
 
   &:not(.active):hover
-    background-color #ddd
-
-  & h3,
-  & p
-    margin-top 0
-    margin-bottom .25rem
-
-  & small
-    color #6c757d
-
-  &.active small
-    color #fff
+    background-color lighten(black, 90%)
