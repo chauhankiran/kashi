@@ -1,0 +1,22 @@
+{
+  "name": "kashi",
+  "version": "0.0.1",
+  "description": "A small hackable style framework",
+  "main": "./dist/kashi.min.css",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chauhankiran/kashi.git"
+  },
+  "author": "Kiran Chauhan",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/chauhankiran/kashi/issues"
+  },
+  "homepage": "https://github.com/chauhankiran/kashi#readme"
+}
