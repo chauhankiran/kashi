@@ -39,14 +39,14 @@ for text-float-option in text-float-options
 // Text size options.
 text-size-options = {
   big: small-font-size,
-  normal: font-size,
   small: small-font-size
 }
 for text-size-option, text-size-option-value in text-size-options
   .text-{text-size-option}
     font-size text-size-option-value
 
-.text-regular
+.text-normal
+  font-size font-size
   font-style normal
   font-weight normal
 

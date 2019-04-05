@@ -409,13 +409,11 @@ thead th {
 .text-big {
   font-size: 12.8px;
 }
-.text-normal {
-  font-size: 16px;
-}
 .text-small {
   font-size: 12.8px;
 }
-.text-regular {
+.text-normal {
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
 }
