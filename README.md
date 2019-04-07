@@ -2,7 +2,21 @@
 
 > A small hackable style framework
 
+Kashi is a small (4.8kb) style framework created for small websites, email templates and blog.
+
 ## Getting Started
+
+You can easily install Kashi with,
+
+```bash
+$ npm install kashi
+```
+
+Or you can link it,
+
+```html
+<link rel="stylesheet" href="./dist/kashi.min.css">
+```
 
 ## Hacking
 
