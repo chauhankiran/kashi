@@ -1,6 +1,6 @@
 {
   "name": "kashi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small hackable style framework",
   "main": "./dist/kashi.min.css",
   "directories": {
