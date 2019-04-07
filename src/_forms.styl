@@ -3,36 +3,36 @@
 // Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
 
 .npt
-  border 2px solid lighten(black, 20%)
+  border 2px solid lighten(main-foreground, 20%)
   padding .5rem .8rem
   display inline-block
   margin-bottom .5rem
   margin-top .5rem
 
 .npt:focus
-  border-color black
+  border-color main-foreground
 
 .npt-brand
-  border 2px solid lighten(brand, 20%)
+  border 2px solid lighten(main-brand, 20%)
 
 .npt-brand:focus
-  border-color brand
+  border-color main-brand
 
 .npt:disabled,
 .npt.disabled
-  border-color lighten(black, 60%)
+  border-color lighten(main-foreground, 60%)
 
 .npt-brand:disabled,
 .npt-brand.disabled
-  border-color lighten(brand, 60%)
+  border-color lighten(main-brand, 60%)
 
 .npt-lg
   display block
   width 100%
 
 .slct
-  background-color white
-  color black
+  background-color main-background
+  color main-foreground
   border 2px solid lighten(black, 20%)
   padding .5rem .8rem
   display inline-block
@@ -40,7 +40,7 @@
   margin-bottom .5rem
 
 .slct-brand
-  border-color lighten(brand, 20%)
+  border-color lighten(main-brand, 20%)
 
 .slct-lg
   display block

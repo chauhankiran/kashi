@@ -4,10 +4,10 @@
 
 .btn
   appearance none
-  border 1px solid black
-  background-color lighten(black, 40%)
+  border 1px solid main-foreground
+  background-color lighten(main-foreground, 40%)
   border-radius 3px
-  box-shadow 0 4px 0 lighten(black, 20%)
+  box-shadow 0 4px 0 lighten(main-foreground, 20%)
   color white !important
   cursor pointer
   padding .5rem .8rem
@@ -21,18 +21,18 @@
 
 .btn:focus,
 .btn:active
-  background-color lighten(black, 20%)
+  background-color lighten(main-foreground, 20%)
   box-shadow none
   top 4px
 
 .btn-brand
-  border 1px solid brand
-  background-color lighten(brand, 40%)
-  box-shadow 0 4px 0 lighten(brand, 20%)
+  border 1px solid main-brand
+  background-color lighten(main-brand, 40%)
+  box-shadow 0 4px 0 lighten(main-brand, 20%)
 
 .btn-brand:active,
 .btn-brand:focus
-  background-color lighten(brand, 20%)
+  background-color lighten(main-brand, 20%)
   box-shadow none
   top 4px
 

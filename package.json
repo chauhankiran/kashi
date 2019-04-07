@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/chauhankiran/kashi/issues"
   },
-  "homepage": "https://github.com/chauhankiran/kashi#readme"
+  "homepage": "https://chauhankiran.github.io/kashi/",
+  "keywords": [
+    "css",
+    "responsive",
+    "front-end"
+  ]
 }

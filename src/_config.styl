@@ -1,26 +1,22 @@
-white = #fffffe
-black = #333745
-brand = #e63462
 
-font-size = 16px
-small-font-size = font-size * .8
-big-font-size = font-size * 1.2
-font-weight = 700
-line-height = 1.5
+// _config.styl
 
-header-font-weight = 400
-h1-size = 2.5rem
-h2-size = 2rem
-h3-size = 1.5rem
-h4-size = 1.25rem
-h5-size = 1.125rem
-h6-size = 1rem
+// This file contains some configurations options for Kashi style framework.
+// Using this file, you can change the main fonts and color.
+// If you want to do more customizations than mentioned in this file,
+// Please take a look at "_privileged.styl" and/or "_hack.styl" fiels.
 
-grid-width = 60rem // 960px.
-mobile-grid-width = 42rem // 768px.
-cols = 12
+// If you are using Google fonts, then copy the @import url here.
+// For example, Kashi use "Source Sans Pro" fonts with variations.
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700');
 
-// Nav
-nav-height = 4rem
-nav-items-padding = 1rem
-nav-brand-size = 1.75rem
+// This will define your default font for the whole style 
+// framework ( except code categories ). If you are using Google fonts, 
+// then you possibly has to copy the value of `font-family` here.
+main-font = 'Source Sans Pro', sans-serif;
+
+// By default Kashi uses three colors ( with darken/lighten shades ) named as
+// brand, foreground, background.
+main-brand = #e63462
+main-background = #fffffe
+main-foreground = #333745
