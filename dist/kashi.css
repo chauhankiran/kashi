@@ -327,35 +327,35 @@ thead th {
   display: block;
   width: 100%;
 }
-.list {
+.lst {
   list-style-type: none;
   padding-left: 0;
   display: flex;
   flex-direction: column;
 }
-.list-item {
+.lst-tm {
   background-color: #fffffe;
   display: block;
   padding: 0.75rem 1.25rem;
   border: 1px solid #e9eaee;
   margin-bottom: -1px;
 }
-.list-item:first-child {
+.lst-tm:first-child {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-.list-item:last-child {
+.lst-tm:last-child {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-.list-item.active {
+.lst-tm.active {
   background-color: #f085a1;
   color: #fffffe;
 }
-.list-item.disabled {
+.lst-tm.disabled {
   opacity: 0.5;
 }
-.list-item:not(.active):hover {
+.lst-tm:not(.active):hover {
   background-color: #e9eaee;
 }
 .text-left {
