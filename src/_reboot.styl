@@ -1,55 +1,52 @@
-// Kashi
-// Copyright 2019 Kiran Chauhan
-// Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
-
 *,
 *::before,
-*::after
-  box-sizing border-box
-
+*::after {
+    box-sizing: border-box;
+}
 html,
-body
-  margin 0
-  padding 0
-
-body
-  background-color main-background
-  color main-foreground
-  font-size font-size
-  line-height line-height
-  font-family main-font
-
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    line-height: 1.5;
+    font-family: var(--text-font);
+}
 a:hover,
-a:active
-  outline 0
-
+a:active {
+    outline: 0;
+}
 b,
-strong
-  font-weight font-weight
-
+strong {
+    font-weight: var(--font-bold);
+}
 code,
 kbd,
 pre,
-samp
-  font-family monospace, monospace
-
-pre
-  overflow auto
-
+samp {
+    font-family: monospace, monospace;
+}
+pre {
+    overflow-x: auto;
+}
 button,
 input,
 select,
-textarea
-  font-family inherit
-  font-size inherit
-  font-weight inherit
-  line-height inherit
-  margin 0
-
-textarea
-  overflow auto
-  resize vertical
-  min-height 5rem
-
-img
-  vertical-align middle
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+    min-height: var(--min-textarea-height);
+}
+img {
+    vertical-align: middle;
+}

@@ -1,26 +1,56 @@
-// Kashi
-// Copyright 2019 Kiran Chauhan
-// Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
-
-.container
-  width 100%
-  max-width grid-width
-  margin 0 auto
-
-.row
-  display flex
-  flex-flow row wrap
-  justify-content space-between
-
-.col // Magic column.
-  flex 1
-
-for col in 1..cols
-  .col-{col}
-    width ((col / cols) * 100)%
-
-@media sreen and ( max-width: mobile-grid-width )
-  .col,
-  [class^='col']
-    flex-grow 0
-    flex-basis 100%
+.container {
+    width: 100%;
+    max-width: var(--grid-container-width);
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.col {
+    flex: 1;
+}
+.col-1 {
+    width: 8.333333333333332%;
+}
+.col-2 {
+    width: 16.666666666666664%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33333333333333%;
+}
+.col-5 {
+    width: 41.66666666666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333333333333336%;
+}
+.col-8 {
+    width: 66.66666666666666%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33333333333334%;
+}
+.col-11 {
+    width: 91.66666666666666%;
+}
+.col-12 {
+    width: 100%;
+}
+@media sreen and (max-width: var(--grid-mobile-container-width)) {
+    .col,
+    [class^='col'] {
+        flex-grow: 0;
+        flex-basis: 100%;
+    }
+}

@@ -1,20 +1,39 @@
 /**
- * Copyright (c) 2019 Kiran Chauhan (https://chauhankiran.github.io)
- *
- * Kashi is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * Kashi is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with Kashi. If not, see <https://www.gnu.org/licenses/>.
+ * kashi.css
+ * (c) 2019 Kiran Chauhan <kiranchauhan68@gmail.com>
+ * GNU GPL v3.0 or Later
 **/
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700");
+:root {
+  --background-color: #fff;
+  --text-color: #333745;
+  --brand-color: #ff5630;
+  --brand-color-variation: #de350b;
+  --link-color: #0052cc;
+  --link-color-variation: #0747a6;
+  --grey-color: #6b778c;
+  --grey-color-variation: #5e6c84;
+  --text-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --mono-font: Menlo, Consolas, "DejaVu Sans Mono", Monaco, monospace;
+  --font-size: 16px;
+  --font-size-small: 12.8px;
+  --font-size-big: 19.2px;
+  --font-weight-bold: 700;
+  --font-weight-light: 100;
+  --border-size: 1px;
+  --border-color: var(--grey-color);
+  --border-radius: 0.3rem;
+  --header-font-weight: 400;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
+  --h4-font-size: 1.25rem;
+  --h5-font-size: 1.125rem;
+  --h6-font-size: 1rem;
+  --grid-container-width: 60rem;
+  --grid-mobile-container-width: 42rem;
+  --nav-height: 5rem;
+  --textarea-height: 5rem;
+}
 *,
 *::before,
 *::after {
@@ -26,11 +45,11 @@ body {
   padding: 0;
 }
 body {
-  background-color: #fffffe;
-  color: #333745;
-  font-size: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size);
   line-height: 1.5;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--text-font);
 }
 a:hover,
 a:active {
@@ -38,7 +57,7 @@ a:active {
 }
 b,
 strong {
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 code,
 kbd,
@@ -47,7 +66,7 @@ samp {
   font-family: monospace, monospace;
 }
 pre {
-  overflow: auto;
+  overflow-x: auto;
 }
 button,
 input,
@@ -62,74 +81,55 @@ textarea {
 textarea {
   overflow: auto;
   resize: vertical;
-  min-height: 5rem;
+  min-height: var(--min-textarea-height);
 }
 img {
   vertical-align: middle;
 }
-h1 {
-  font-weight: 400;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-h2 {
-  font-weight: 400;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-h3 {
-  font-weight: 400;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-h4 {
-  font-weight: 400;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-h5 {
-  font-weight: 400;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  font-weight: 400;
+  font-weight: var(--header-font-weight);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: var(--h1-font-size);
 }
 h2 {
-  font-size: 2rem;
+  font-size: var(--h2-font-size);
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: var(--h3-font-size);
 }
 h4 {
-  font-size: 1.25rem;
+  font-size: var(--h4-font-size);
 }
 h5 {
-  font-size: 1.125rem;
+  font-size: var(--h5-font-size);
 }
 h6 {
-  font-size: 1rem;
+  font-size: var(--h6-font-size);
 }
 address,
 p {
-  font-size: 16px;
+  font-size: var(--font-size);
   margin-top: 0;
   margin-bottom: 16px;
 }
 small {
-  font-size: 12.8px;
+  font-size: var(--font-size-small);
 }
 a {
-  color: #e63462;
+  color: var(--link-color);
   text-decoration: none;
 }
 a:hover {
-  color: #e21c4f;
+  color: var(--link-color);
+  text-decoration: underline;
 }
 table {
   border-collapse: collapse;
@@ -139,21 +139,21 @@ table {
 th,
 td {
   padding: 0.75rem;
-  border-top: 1px solid #333745;
+  border-top: 1px solid var(--table-border-color);
 }
 thead th {
-  border-bottom: 2px solid #333745;
+  border-bottom: 2px solid var(--table-border-color);
   text-align: inherit;
 }
 .table-bordered {
-  border: 1px solid #333745;
+  border: 1px solid var(--border-color);
 }
 .table-hover tbody tr:hover {
-  background-color: #f6f7f8;
+  background-color: var(--grey-color);
 }
 .container {
   width: 100%;
-  max-width: 60rem;
+  max-width: var(--grid-container-width);
   margin: 0 auto;
 }
 .row {
@@ -200,16 +200,97 @@ thead th {
 .col-12 {
   width: 100%;
 }
-@media sreen and (max-width: 42rem) {
+@media sreen and (max-width: var(--grid-mobile-container-width)) {
   .col,
   [class^='col'] {
     flex-grow: 0;
     flex-basis: 100%;
   }
 }
+.button {
+  appearance: none;
+  border: 1px solid var(--background-color);
+  background-color: var(--grey-color);
+  border-radius: var(--border-radius);
+  color: var(--background-color) !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.button:focus,
+.button:active {
+  background-color: var(--text-color);
+}
+.button-brand {
+  border: 1px solid var(--brand-color);
+  background-color: var(--brand-color);
+}
+.button-brand:active,
+.button-brand:focus {
+  background-color: var(--text-color);
+}
+.button:disabled,
+.button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.button-large {
+  display: block;
+  width: 100%;
+}
+.input {
+  border: 2px solid var(--grey-color);
+  padding: 0.5rem 0.8rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.input:focus {
+  border-color: var(--text-color);
+}
+.input-brand {
+  border: 2px solid var(--brand-color);
+}
+.input-brand:focus {
+  border-color: #e63462;
+}
+.input:disabled,
+.input.disabled {
+  border-color: #a5abbd;
+}
+.input-brand:disabled,
+.input-brand.disabled {
+  border-color: #f5aec0;
+}
+.input-large {
+  display: block;
+  width: 100%;
+}
+.select {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 2px solid var(--grey-color);
+  padding: 0.5rem 0.8rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.select-brand {
+  border-color: var(--brand-color);
+}
+.select-large {
+  display: block;
+  width: 100%;
+}
 .nav {
   display: flex;
-  min-height: 4rem;
+  min-height: var(--nav-height);
   align-items: stretch;
 }
 .nav-left,
@@ -232,131 +313,68 @@ thead th {
   display: flex;
   align-items: center;
   padding: 1rem;
-  color: #e63462;
+  color: var(--brand-color);
   text-decoration: none;
 }
 .nav .brand {
-  font-size: 1.75rem;
+  font-size: var(--font-size-big);
   padding-top: 0;
   padding-bottom: 0;
 }
-.btn {
-  appearance: none;
-  border: 1px solid #333745;
-  background-color: #78809c;
-  border-radius: 3px;
-  box-shadow: 0 4px 0 #545b72;
-  color: #fffffe !important;
-  cursor: pointer;
-  padding: 0.5rem 0.8rem;
-  outline: none;
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  text-decoration: none;
-}
-.btn:focus,
-.btn:active {
-  background-color: #545b72;
-  box-shadow: none;
-  top: 4px;
-}
-.btn-brand {
-  border: 1px solid #e63462;
-  background-color: #f085a1;
-  box-shadow: 0 4px 0 #eb5d81;
-}
-.btn-brand:active,
-.btn-brand:focus {
-  background-color: #eb5d81;
-  box-shadow: none;
-  top: 4px;
-}
-.btn:disabled,
-.btn.disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-.btn-lg {
-  display: block;
-  width: 100%;
-}
-.npt {
-  border: 2px solid #545b72;
-  padding: 0.5rem 0.8rem;
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-}
-.npt:focus {
-  border-color: #333745;
-}
-.npt-brand {
-  border: 2px solid #eb5d81;
-}
-.npt-brand:focus {
-  border-color: #e63462;
-}
-.npt:disabled,
-.npt.disabled {
-  border-color: #a5abbd;
-}
-.npt-brand:disabled,
-.npt-brand.disabled {
-  border-color: #f5aec0;
-}
-.npt-lg {
-  display: block;
-  width: 100%;
-}
-.slct {
-  background-color: #fffffe;
-  color: #333745;
-  border: 2px solid #545b72;
-  padding: 0.5rem 0.8rem;
-  display: inline-block;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.slct-brand {
-  border-color: #eb5d81;
-}
-.slct-lg {
-  display: block;
-  width: 100%;
-}
-.lst {
+.list {
   list-style-type: none;
   padding-left: 0;
   display: flex;
   flex-direction: column;
 }
-.lst-tm {
-  background-color: #fffffe;
+.list-item {
+  background-color: var(--background-color);
   display: block;
   padding: 0.75rem 1.25rem;
-  border: 1px solid #e9eaee;
+  border: 1px solid var(--border-color);
   margin-bottom: -1px;
 }
-.lst-tm:first-child {
+.list-item:first-child {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-.lst-tm:last-child {
+.list-item:last-child {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-.lst-tm.active {
-  background-color: #f085a1;
-  color: #fffffe;
+.list-item.active {
+  background-color: var(--brand-color);
+  color: var(--background-color);
 }
-.lst-tm.disabled {
+.list-item.disabled {
   opacity: 0.5;
 }
-.lst-tm:not(.active):hover {
+.list-item:not(.active):hover {
   background-color: #e9eaee;
+}
+.card {
+  border: 1px solid #78809c;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.card:hover {
+  box-shadow: 0 0 0.7rem rgba(33,33,33,0.2);
+}
+.card-header {
+  margin-bottom: 0.5rem;
+}
+.card-title {
+  font-size: 1.6rem;
+}
+.card-subtitle {
+  font-size: 1.1rem;
+  color: #708090;
+}
+.card-footer {
+  margin-top: 0.5rem;
 }
 .text-left {
   text-align: left;
@@ -407,24 +425,24 @@ thead th {
   float: right;
 }
 .text-big {
-  font-size: 12.8px;
+  font-size: var(--font-size-big);
 }
 .text-small {
-  font-size: 12.8px;
+  font-size: var(--font-size-small);
 }
 .text-normal {
-  font-size: 16px;
+  font-size: var(--font-size);
   font-style: normal;
   font-weight: normal;
 }
 .text-bold {
-  font-weight: bold;
+  font-weight: var(--font-bold);
 }
 .text-italic {
   font-style: italic;
 }
 .text-thin {
-  font-weight: thin;
+  font-weight: var(--font-light);
 }
 .invisible {
   visibility: hidden;

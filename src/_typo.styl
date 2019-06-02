@@ -1,30 +1,45 @@
-// Kashi
-// Copyright 2019 Kiran Chauhan
-// Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
-
-for header in (1..6)
-  h{header}
-    font-weight header-font-weight
-    margin-top .5rem
-    margin-bottom .5rem
-
-headers = h1-size, h2-size, h3-size, h4-size, h5-size, h6-size
-for header, type in headers
-  h{type + 1}
-    font-size header
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--header-font-weight);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+h1 {
+    font-size: var(--h1-font-size);
+}
+h2 {
+    font-size: var(--h2-font-size);
+}
+h3 {
+    font-size: var(--h3-font-size);
+}
+h4 {
+    font-size: var(--h4-font-size);
+}
+h5 {
+    font-size: var(--h5-font-size);
+}
+h6 {
+    font-size: var(--h6-font-size);
+}
 address,
-p
-  font-size font-size
-  margin-top 0
-  margin-bottom font-size
-
-small
-  font-size small-font-size
-
-a
-  color main-brand
-  text-decoration none
-
-a:hover
-  color darken(main-brand, 10%)
+p {
+    font-size: var(--font-size);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+small {
+    font-size: var(--font-size-small);
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}

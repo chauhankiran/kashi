@@ -1,4 +1,4 @@
-# kashi
+# Kashi
 
 > A small hackable style framework
 
@@ -15,7 +15,7 @@ $ npm install kashi
 Or you can link it,
 
 ```html
-<link rel="stylesheet" href="./dist/kashi.min.css">
+<link rel="stylesheet" href="https://unpkg.com/kashi@latest">
 ```
 
 ## Hacking

@@ -1,13 +1,14 @@
 {
   "name": "kashi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small hackable style framework",
   "main": "./dist/kashi.min.css",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "normal": "stylus src/kashi.styl -o dist/kashi.css",
+    "compress": "stylus --compress src/kashi.styl -o dist/kashi.min.css"
   },
   "repository": {
     "type": "git",

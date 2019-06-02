@@ -1,0 +1,31 @@
+.list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.list-item {
+    background-color: var(--background-color);
+    display: block;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: -1px;
+}
+.list-item:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.list-item:last-child {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.list-item.active {
+    background-color: var(--brand-color);
+    color: var(--background-color);
+}
+.list-item.disabled {
+    opacity: 0.5;
+}
+.list-item:not(.active):hover {
+    background-color: #e9eaee;
+}

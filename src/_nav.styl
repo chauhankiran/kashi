@@ -1,36 +1,33 @@
-// Kashi
-// Copyright 2019 Kiran Chauhan
-// Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
-
-.nav
-  display flex
-  min-height nav-height
-  align-items stretch
-
+.nav {
+    display: flex;
+    min-height: var(--nav-height);
+    align-items: stretch;
+}
 .nav-left,
 .nav-center,
-.nav-right
-  display flex
-  flex 1
-
-.nav-left
-  justify-content flex-start
-
-.nav-center
-  justify-content center
-
-.nav-right
-  justify-content flex-end
-
+.nav-right {
+    display: flex;
+    flex: 1;
+}
+.nav-left {
+    justify-content: flex-start;
+}
+.nav-center {
+    justify-content: center;
+}
+.nav-right {
+    justify-content: flex-end;
+}
 .nav a,
-.nav .brand
-  display flex
-  align-items center
-  padding nav-items-padding
-  color main-brand
-  text-decoration none
-
-.nav .brand
-  font-size nav-brand-size
-  padding-top 0
-  padding-bottom 0
+.nav .brand {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: var(--brand-color);
+    text-decoration: none;
+}
+.nav .brand {
+    font-size: var(--font-size-big);
+    padding-top: 0;
+    padding-bottom: 0;
+}

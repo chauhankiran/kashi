@@ -1,23 +1,20 @@
-// Kashi
-// Copyright 2019 Kiran Chauhan
-// Licensed under GNU GPL v3.0 (https://github.com/chauhankiran/kashi/blob/master/LICENSE)
-
-table
-  border-collapse collapse
-  width 100%
-  overflow-x auto
-
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
 th,
-td
-  padding .75rem
-  border-top 1px solid main-foreground
-
-thead th
-  border-bottom 2px solid main-foreground
-  text-align inherit
-
-.table-bordered
-  border 1px solid main-foreground
-
-.table-hover tbody tr:hover
-  background-color lighten(main-foreground, 96%)
+td {
+    padding: 0.75rem;
+    border-top: 1px solid var(--table-border-color);
+}
+thead th {
+    border-bottom: 2px solid var(--table-border-color);
+    text-align: inherit;
+}
+.table-bordered {
+    border: 1px solid var(--border-color);
+}
+.table-hover tbody tr:hover {
+    background-color: var(--grey-color);
+}

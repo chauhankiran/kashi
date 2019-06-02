@@ -1,0 +1,39 @@
+.button {
+    appearance: none;
+    border: 1px solid var(--background-color);
+    background-color: var(--grey-color);
+    border-radius: var(--border-radius);
+
+    color: var(--background-color) !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    outline: none;
+
+    padding: 0.5rem 0.8rem;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.button:focus,
+.button:active {
+    background-color: var(--text-color);
+}
+.button-brand {
+    border: 1px solid var(--brand-color);
+    background-color: var(--brand-color);
+}
+.button-brand:active,
+.button-brand:focus {
+    background-color: var(--text-color);
+}
+.button:disabled,
+.button.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.button-large {
+    display: block;
+    width: 100%;
+}
