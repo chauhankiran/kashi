@@ -8,7 +8,8 @@
   },
   "scripts": {
     "normal": "stylus src/kashi.styl -o dist/kashi.css",
-    "compress": "stylus --compress src/kashi.styl -o dist/kashi.min.css"
+    "compress": "stylus --compress src/kashi.styl -o dist/kashi.min.css",
+    "watch": "stylus -w src/kashi.styl -o dist/kashi.css"
   },
   "repository": {
     "type": "git",

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kashi: A small hackable style framework</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/kashi@latest">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/kashi@latest"> -->
+    <link rel="stylesheet" href="../dist/kashi.css">
+    <link rel="stylesheet" href="atom-one-light.css">
+    <script src="highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <style>
         /* This is a modified styles on Kashi to create docs. Do not use this as ref. */
         .container {
@@ -18,11 +22,44 @@
         <h1>Kashi</h1>
         <p class="text-italic">A small hackable style framework <code class="text-normal">v0.0.1</code></p>
     </header>
-    <main>
-
+    <main class="container">
+        <p>Kashi is a small style framework created for small website, email template and blog where you need style but without features burden. It's lightweight and hackable in nature. You can easily hack it by overriding the existing set of <a href="#variables">variable defined within css</a>.</p>
+        
+        <h2>Getting Started</h2>
+        
+        <p>
+            Getting started with Kashi is easy. You just need to install it's package via <code>npm</code>.
+        </p>
+        
+        <pre><code class="bash">$ npm install kashi</code></pre>
+        
+        <p>Or you can use CDN to include within your existing/new project.</p>
+        
+        <pre><code class="html">&lt;link rel="stylesheet" href="https://unpkg.com/kashi@latest"&gt;</code></pre>
+        
+        <h2>Components</h2>
+        
+        <h3>Typography</h3>
+        
+        <h3>Grid</h3>
+        
+        <h3>Nav</h3>
+        
+        <h3>Button</h3>
+        
+        <h3>Form Components</h3>
+        
+        <h3>Table</h3>
+        
+        <h3>List</h3>
+        
+        <h3>Card</h3>
+        
+        <h3>Utilities</h3>
     </main>
-    <footer class="text-center">
+    <footer class="text-center text-muted">
         &copy; 2019 <a href="https://chauhankiran.github.io/">Kiran Chauhan</a>.
     </footer>
+    
 </body>
 </html>
