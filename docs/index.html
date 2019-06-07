@@ -15,6 +15,10 @@
         .container {
             max-width: 768px;
         }
+        footer {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -24,42 +28,228 @@
     </header>
     <main class="container">
         <p>Kashi is a small style framework created for small website, email template and blog where you need style but without features burden. It's lightweight and hackable in nature. You can easily hack it by overriding the existing set of <a href="#variables">variable defined within css</a>.</p>
-        
+
         <h2>Getting Started</h2>
-        
+
         <p>
             Getting started with Kashi is easy. You just need to install it's package via <code>npm</code>.
         </p>
-        
+
         <pre><code class="bash">$ npm install kashi</code></pre>
-        
+
         <p>Or you can use CDN to include within your existing/new project.</p>
-        
+
         <pre><code class="html">&lt;link rel="stylesheet" href="https://unpkg.com/kashi@latest"&gt;</code></pre>
-        
+
         <h2>Components</h2>
-        
+
         <h3>Typography</h3>
-        
+
         <h3>Grid</h3>
-        
+
         <h3>Nav</h3>
-        
+
         <h3>Button</h3>
-        
+
         <h3>Form Components</h3>
-        
+
         <h3>Table</h3>
-        
+
         <h3>List</h3>
-        
+
         <h3>Card</h3>
-        
+
+        <p>
+            Creating a card in Kashi is simple. You just need to use class or set of classes from Kashi to make simple or fully detail card on particular entity. Here is an example that display simple news-like card.
+        </p>
+
+        <pre><code class="html">&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;h3 class=&quot;card-title&quot;&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;body&quot;&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <div class="card">
+            <div class="header">
+                <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+            </div>
+            <div class="body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu
+            </div>
+        </div>
+
+        <p>
+            Here is the another example that display abstract information of blog with sub-heading or tag-line.
+        </p>
+
+        <pre><code class="html">&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;h3 class=&quot;card-title&quot;&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;
+        &lt;p class=&quot;card-subtitle&quot;&gt;ex ea commodo consequat&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;body&quot;&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <div class="card">
+            <div class="header">
+                <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                <p class="card-subtitle">ex ea commodo consequat</p>
+            </div>
+            <div class="body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu
+            </div>
+        </div>
+
+        <p>
+            Here is the example that use all the available classes within card component.
+        </p>
+
+        <pre><code class="html">&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;
+        &lt;h3 class=&quot;card-title&quot;&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;
+        &lt;p class=&quot;card-subtitle&quot;&gt;ex ea commodo consequat&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu
+    &lt;/div&gt;
+    &lt;div class=&quot;card-footer text-muted&quot;&gt;
+        Lorem &amp;mdash; commodo &amp;mdash; laboris &amp;mdash; ipsum
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                <p class="card-subtitle">ex ea commodo consequat</p>
+            </div>
+            <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu
+            </div>
+            <div class="card-footer text-muted">
+                Lorem &mdash; commodo &mdash; laboris &mdash; ipsum
+            </div>
+        </div>
+
+        <p>
+            Creating a card is easy. Just initiate your first block tag with <code>.card</code> class and you are ready to go. Within <code>.card</code> you can have <code>.card-header</code>, <code>.card-body</code> and <code>.card-footer</code> classes that display header, main body and footer of your card respectively. Your <code>.card-header</code> can have two possible titles with category of <code>.card-title</code> and <code>.card-subtitle</code>.
+        </p>
+
+        <p>
+            Do you think one or more card class(es) is/are missing? Please file an issue.
+        </p>
+
         <h3>Utilities</h3>
+
+        <p>
+            Kashi has many utilities components that help you with single and common repetitive tasks such as center aligning, capitalizing text or floating an image on given side. Here is the complete list of these utilities classes that bundle with Kashi.
+        </p>
+
+        <ul>
+           <li>
+               <code>.text-left</code> - left align the text.
+           </li>
+           <li>
+               <code>.text-center</code> - center align the text.
+           </li>
+           <li>
+               <code>.text-right</code> - right align the text.
+           </li>
+           <li>
+               <code>.text-justify</code> - justify the text.
+           </li>
+        </ul>
+
+        <ul>
+            <li>
+                <code>.text-lowercase</code> - transfer text to lowercase
+            </li>
+            <li>
+                <code>.text-uppercase</code> - transfer text to uppercase
+            </li>
+            <li>
+                <code>.text-capitalize</code> - transfer text to capitalize
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <code>.text-brand</code> - colored text with brand color
+            </li>
+            <li>
+                <code>.text-muted</code> - colored text with gray color
+            </li>
+        </ul>
+
+        <ul>
+            <li><code>.block</code> - modified the display properly to block.</li>
+            <li><code>.inline-block</code> - modified the display properly to inline-block.</li>
+            <li><code>.inline</code> - modified the display properly to inline.</li>
+            <li><code>.none</code> - modified the display properly to none or hide the applied element</li>
+        </ul>
+
+        <ul>
+            <li><code>.rectangle</code> - removed any applied border-radius.</li>
+            <li><code>.rounded</code> - apply a little border-radius to given element.</li>
+            <li><code>.circle</code> - circle the element by applying 50% border-radius.</li>
+        </ul>
+
+        <ul>
+            <li><code>.left</code> - floats an element to the left</li>
+            <li><code>.right</code> - floats an element to the right</li>
+        </ul>
+
+        <ul>
+            <li><code>.text-big</code> - increase the size of text, a little bit.</li>
+            <li><code>.text-small</code> - decrease the size of text, a little bit.</li>
+            <li><code>.text-normal</code> - normalize the given text by its size, style and weight.</li>
+        </ul>
+
+        <ul>
+            <li><code>.text-bold</code> - bold the text by its weight.</li>
+            <li><code>.text-italic</code> - italic the text by its style.</li>
+            <li><code>.text-thin</code> - light the text by its weight.</li>
+        </ul>
+
+        <ul>
+            <li><code>.invisible</code> - invisible the text by hiding its visual-ness.</li>
+        </ul>
+
+        <p>
+            Do you think one or more helper class(es) is/are missing? Please file an issue.
+        </p>
     </main>
     <footer class="text-center text-muted">
-        &copy; 2019 <a href="https://chauhankiran.github.io/">Kiran Chauhan</a>.
+        &copy; 2019 Made with <3 by <a href="https://chauhankiran.github.io/">Kiran</a>.
     </footer>
-    
+
 </body>
 </html>

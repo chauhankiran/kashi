@@ -374,6 +374,7 @@ thead th {
   color: #708090;
 }
 .card-footer {
+  color: var(--grey-color);
   margin-top: 0.5rem;
 }
 .text-left {
