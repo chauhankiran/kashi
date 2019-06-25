@@ -1,13 +1,13 @@
 /**
- * kashi.css
+ * Kashi
  * (c) 2019 Kiran Chauhan <kiranchauhan68@gmail.com>
  * GNU GPL v3.0 or Later
 **/
 :root {
   --background-color: #fff;
   --text-color: #333745;
-  --brand-color: #ff5630;
-  --brand-color-variation: #de350b;
+  --brand-color: #5e59a8;
+  --brand-color-variation: #6454c0;
   --link-color: #0052cc;
   --link-color-variation: #0747a6;
   --grey-color: #6b778c;
@@ -19,6 +19,8 @@
   --font-size-big: 19.2px;
   --font-weight-bold: 700;
   --font-weight-light: 100;
+  --link-decoration: none;
+  --link-decoration-hover: none;
   --border-size: 1px;
   --border-color: var(--grey-color);
   --border-radius: 0.3rem;
@@ -31,7 +33,8 @@
   --h6-font-size: 1rem;
   --grid-container-width: 60rem;
   --grid-mobile-container-width: 42rem;
-  --nav-height: 5rem;
+  --nav-height: 4rem;
+  --nav-brand-size: 19.2px;
   --textarea-height: 5rem;
 }
 *,
@@ -43,6 +46,9 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--background-color);
@@ -125,11 +131,11 @@ small {
 }
 a {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: var(--link-decoration);
 }
 a:hover {
   color: var(--link-color);
-  text-decoration: underline;
+  text-decoration: var(--link-decoration-hover);
 }
 table {
   border-collapse: collapse;
@@ -139,17 +145,18 @@ table {
 th,
 td {
   padding: 0.75rem;
-  border-top: 1px solid var(--table-border-color);
+  border-top: var(--border-size) solid var(--border-color);
 }
 thead th {
-  border-bottom: 2px solid var(--table-border-color);
+  border-bottom: var(--border-size) solid var(--border-color);
   text-align: inherit;
 }
 .table-bordered {
-  border: 1px solid var(--border-color);
+  border: var(--border-size) solid var(--border-color);
 }
 .table-hover tbody tr:hover {
   background-color: var(--grey-color);
+  color: var(--background-color);
 }
 .container {
   width: 100%;
@@ -317,7 +324,7 @@ thead th {
   text-decoration: none;
 }
 .nav .brand {
-  font-size: var(--font-size-big);
+  font-size: var(--nav-brand-size);
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -331,7 +338,7 @@ thead th {
   background-color: var(--background-color);
   display: block;
   padding: 0.75rem 1.25rem;
-  border: 1px solid var(--border-color);
+  border: var(--border-size) solid var(--border-color);
   margin-bottom: -1px;
 }
 .list-item:first-child {
@@ -350,7 +357,8 @@ thead th {
   opacity: 0.5;
 }
 .list-item:not(.active):hover {
-  background-color: #e9eaee;
+  background-color: var(--grey-color);
+  color: var(--background-color);
 }
 .card {
   border: 1px solid #78809c;

@@ -8,7 +8,7 @@
     background-color: var(--background-color);
     display: block;
     padding: 0.75rem 1.25rem;
-    border: 1px solid var(--border-color);
+    border: var(--border-size) solid var(--border-color);
     margin-bottom: -1px;
 }
 .list-item:first-child {
@@ -27,5 +27,6 @@
     opacity: 0.5;
 }
 .list-item:not(.active):hover {
-    background-color: #e9eaee;
+    background-color: var(--grey-color);
+    color: var(--background-color);
 }
