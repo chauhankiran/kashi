@@ -55,6 +55,183 @@
 
         <h3>Table</h3>
 
+        <p>
+            Style framework is incomplete without support for beautiful table. Kashi support table from base. You creates table and it look beautiful by default. This beautifulness can be increased by using classes such as, <code>.table-bordered</code> and <code>.table-hover</code>.
+        </p>
+
+        <pre><code class="language-html">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Num&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Like&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Kiran&lt;/td&gt;
+            &lt;td&gt;Cha&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Ankit&lt;/td&gt;
+            &lt;td&gt;Masalo&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Nitin&lt;/td&gt;
+            &lt;td&gt;Masalo&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Num</th>
+                    <th>Name</th>
+                    <th>Like</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kiran</td>
+                    <td>Cha</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ankit</td>
+                    <td>Masalo</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nitin</td>
+                    <td>Masalo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            As name suggest, <code>.table-bordered</code> will add border around table all the sides.
+        </p>
+
+        <pre><code class="language-html">&lt;table class=&quot;table-bordered&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Num&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Like&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Kiran&lt;/td&gt;
+            &lt;td&gt;Cha&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Ankit&lt;/td&gt;
+            &lt;td&gt;Masalo&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Nitin&lt;/td&gt;
+            &lt;td&gt;Masalo&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>Num</th>
+                    <th>Name</th>
+                    <th>Like</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kiran</td>
+                    <td>Cha</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ankit</td>
+                    <td>Masalo</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nitin</td>
+                    <td>Masalo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Finally, you can add a little hover-ness to table by using <code>.table-hover</code> class.
+        </p>
+
+        <pre><code class="language-html">&lt;table class=&quot;table-hover&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Num&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Like&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Kiran&lt;/td&gt;
+            &lt;td&gt;Cha&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Ankit&lt;/td&gt;
+            &lt;td&gt;Masalo&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Nitin&lt;/td&gt;
+            &lt;td&gt;Masalo&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+        <table class="table-hover">
+            <thead>
+                <tr>
+                    <th>Num</th>
+                    <th>Name</th>
+                    <th>Like</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kiran</td>
+                    <td>Cha</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ankit</td>
+                    <td>Masalo</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nitin</td>
+                    <td>Masalo</td>
+                </tr>
+            </tbody>
+        </table>
+
         <h3>List</h3>
 
         <h3>Card</h3>
