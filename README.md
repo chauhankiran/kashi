@@ -18,9 +18,29 @@ Or you can link it,
 <link rel="stylesheet" href="https://unpkg.com/kashi@latest">
 ```
 
+## Documentation
+
+```
+TODO
+```
+
+## Examples
+
+```
+TODO
+```
+
 ## Hacking
 
-## Examples/Themes
+```
+TODO
+```
+
+## Themes & Theming
+
+```
+TODO
+```
 
 ## License
 
