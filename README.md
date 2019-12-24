@@ -1,46 +1,31 @@
 # Kashi
 
-> A small hackable style framework
-
-Kashi is a small (4.8kb) style framework created for small websites, email templates and blog.
+> The black & white style framework
 
 ## Getting Started
 
-You can easily install Kashi with,
+You can easily install Kashi via `npm`.
 
 ```bash
-$ npm install kashi
+$ npm i kashi
 ```
 
-Or you can link it,
+Or you can link it via CDN.
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/kashi@latest">
 ```
 
-## Documentation
+That's it! You're good to go.
 
-```
-TODO
-```
+## Resources
 
-## Examples
-
-```
-TODO
-```
-
-## Hacking
-
-```
-TODO
-```
-
-## Themes & Theming
-
-```
-TODO
-```
+1. [Sample @ CodePen](https://codepen.io/chauhankiran/pen/JjoNgNL)
+1. [Documentation](https://chauhankiran.github.io/kashi/)
+2. [Example Gallery](https://chauhankiran.github.io/kashi/examples/)
+3. [Hacking](https://chauhankiran.github.io/kashi/hacking/)
+4. [Themes](https://chauhankiran.github.io/kashi/themes/)
+5. [Let's Build One](https://chauhankiran.github.io/kashi/build/)
 
 ## License
 
