@@ -12,11 +12,11 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-size: var(--font-size);
-    line-height: 1.5;
-    font-family: var(--text-font);
+    background-color: var(--white);
+    color: var(--black);
+    font-size: var(--size);
+    line-height: 1.428;
+    font-family: var(--font);
 }
 a:hover,
 a:active {
@@ -24,13 +24,13 @@ a:active {
 }
 b,
 strong {
-    font-weight: var(--font-bold);
+    font-weight: var(--bold);
 }
 code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: var(--mono);
 }
 pre {
     overflow-x: auto;
@@ -48,7 +48,7 @@ textarea {
 textarea {
     overflow: auto;
     resize: vertical;
-    min-height: var(--min-textarea-height);
+    min-height: 4rem;
 }
 img {
     vertical-align: middle;
