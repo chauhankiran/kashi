@@ -237,10 +237,6 @@ thead th {
   pointer-events: none;
   opacity: 0.5;
 }
-.btn-lg {
-  display: block;
-  width: 100%;
-}
 .text-box {
   outline: 0;
   border: 2px solid var(--black);
@@ -249,16 +245,27 @@ thead th {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
-.text-box:focus {
+.text-box:focus,
+.text-box:hover {
   box-shadow: 3px 4px 0px var(--black);
 }
 .text-box:disabled,
 .text-box.disabled {
   opacity: 0.5;
 }
-.text-box-lg {
-  display: block;
-  width: 100%;
+select {
+  outline: 0;
+  border: 2px solid var(--black);
+  display: inline-block;
+  padding: 0.5rem;
+}
+select:active,
+select:focus {
+  background: var(--white);
+  color: var(--black) !important;
+  border: 1px solid var(--black);
+  box-shadow: 3px 4px 0 var(--black);
+  text-decoration: underline !important;
 }
 .nav {
   display: flex;
@@ -405,4 +412,8 @@ thead th {
 }
 .invisible {
   visibility: hidden;
+}
+.lg {
+  display: block;
+  width: 100%;
 }
