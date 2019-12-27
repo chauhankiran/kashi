@@ -8,7 +8,7 @@
     background-color: var(--white)
     display: block;
     padding: 0.75rem 1.25rem;
-    border: 1px solid #333;
+    border: 1px solid var(--black);
     margin-bottom: -1px;
 }
 .list-group-item.active {
@@ -18,7 +18,8 @@
 .list-group-item.disabled {
     opacity: 0.5;
 }
-.list-group-item:not(.active):hover {
+.list-group-item:not(.active):hover,
+.list-group-item:not(.active):hover a {
     background-color: var(--black);
-    color: #333; var(--white);
+    color: var(--white);
 }
