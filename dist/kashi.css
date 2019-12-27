@@ -240,6 +240,8 @@ table.hover tbody tr:hover {
 .text-box {
   outline: 0;
   border: 2px solid var(--black);
+  box-shadow: 3px 4px 0px var(--black);
+  transition: box-shadow 0.3s ease-in-out;
   padding: 0.5rem 0.8rem;
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -247,7 +249,7 @@ table.hover tbody tr:hover {
 }
 .text-box:focus,
 .text-box:hover {
-  box-shadow: 3px 4px 0px var(--black);
+  box-shadow: -3px 4px 0 var(--black);
 }
 .text-box:disabled,
 .text-box.disabled {
@@ -256,6 +258,8 @@ table.hover tbody tr:hover {
 select {
   outline: 0;
   border: 2px solid var(--black);
+  box-shadow: 3px 4px 0px var(--black);
+  transition: box-shadow 0.3s ease-in-out;
   display: inline-block;
   padding: 0.5rem;
 }
@@ -264,7 +268,7 @@ select:focus {
   background: var(--white);
   color: var(--black) !important;
   border: 1px solid var(--black);
-  box-shadow: 3px 4px 0 var(--black);
+  box-shadow: -3px 4px 0 var(--black);
   text-decoration: underline !important;
 }
 .nav {
@@ -418,4 +422,14 @@ select:focus {
 .lg {
   display: block;
   width: 100%;
+}
+.card {
+  border: 2px solid var(--black);
+  box-shadow: 3px 4px 0 var(--black);
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 0.2rem;
+  padding: 1rem;
+}
+.card:hover {
+  box-shadow: -3px 4px 0 var(--black);
 }
