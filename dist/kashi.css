@@ -433,3 +433,20 @@ select:focus {
 .card:hover {
   box-shadow: -3px 4px 0 var(--black);
 }
+.msg {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1rem;
+}
+.msg:hover {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  box-shadow: 3px 4px 0 var(--black);
+  color: var(--black);
+}
+.msg-close {
+  float: right;
+}
+.msg-close:hover {
+  cursor: pointer;
+}
