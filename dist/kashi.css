@@ -4,8 +4,8 @@
  * GNU GPL v3.0 or Later
 **/
 :root {
-  --black: #000;
-  --white: #fff;
+  --primary: #000;
+  --supportive: #fff;
   --font: "helvetica neue", arial, sans-serif;
   --mono: Menlo, Monaco, Consolas, "Courier New", monospace;
   --size: 14px;
@@ -43,8 +43,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--supportive);
+  color: var(--primary);
   font-size: var(--size);
   line-height: 1.428;
   font-family: var(--font);
@@ -122,11 +122,11 @@ small {
   font-size: var(--small);
 }
 a {
-  color: var(--black);
+  color: var(--primary);
   text-decoration: var(--a-decor);
 }
 a:hover {
-  color: var(--black);
+  color: var(--primary);
   text-decoration: var(--a-hover-decor);
 }
 table {
@@ -137,18 +137,18 @@ table {
 th,
 td {
   padding: var(--small);
-  border-top: 1px solid var(--black);
+  border-top: 1px solid var(--primary);
 }
 thead th {
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--primary);
   text-align: inherit;
 }
 table.bordered {
-  border: 1px solid var(--black);
+  border: 1px solid var(--primary);
 }
 table.hover tbody tr:hover {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--primary);
+  color: var(--supportive);
 }
 .container {
   width: 100%;
@@ -208,10 +208,10 @@ table.hover tbody tr:hover {
 }
 .btn {
   appearance: none;
-  border: 1px solid var(--black);
-  background-color: var(--black);
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
   border-radius: 0;
-  color: var(--white) !important;
+  color: var(--supportive) !important;
   cursor: pointer;
   text-decoration: none !important;
   outline: none;
@@ -221,15 +221,15 @@ table.hover tbody tr:hover {
   display: inline-block;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
-  box-shadow: 3px 4px 0px var(--black);
+  box-shadow: 3px 4px 0px var(--primary);
 }
 .btn:focus,
 .btn:hover,
 .btn:active {
-  background: var(--white);
-  color: var(--black) !important;
-  border: 1px solid var(--black);
-  box-shadow: 3px 4px 0px var(--black);
+  background: var(--supportive);
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  box-shadow: 3px 4px 0px var(--primary);
   text-decoration: underline !important;
 }
 .btn:disabled,
@@ -239,8 +239,8 @@ table.hover tbody tr:hover {
 }
 .text-box {
   outline: 0;
-  border: 2px solid var(--black);
-  box-shadow: 3px 4px 0px var(--black);
+  border: 2px solid var(--primary);
+  box-shadow: 3px 4px 0px var(--primary);
   transition: box-shadow 0.3s ease-in-out;
   padding: 0.5rem 0.8rem;
   display: inline-block;
@@ -249,7 +249,7 @@ table.hover tbody tr:hover {
 }
 .text-box:focus,
 .text-box:hover {
-  box-shadow: -3px 4px 0 var(--black);
+  box-shadow: -3px 4px 0 var(--primary);
 }
 .text-box:disabled,
 .text-box.disabled {
@@ -257,18 +257,18 @@ table.hover tbody tr:hover {
 }
 select {
   outline: 0;
-  border: 2px solid var(--black);
-  box-shadow: 3px 4px 0px var(--black);
+  border: 2px solid var(--primary);
+  box-shadow: 3px 4px 0px var(--primary);
   transition: box-shadow 0.3s ease-in-out;
   display: inline-block;
   padding: 0.5rem;
 }
 select:active,
 select:focus {
-  background: var(--white);
-  color: var(--black) !important;
-  border: 1px solid var(--black);
-  box-shadow: -3px 4px 0 var(--black);
+  background: var(--supportive);
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  box-shadow: -3px 4px 0 var(--primary);
   text-decoration: underline !important;
 }
 .nav {
@@ -277,11 +277,11 @@ select:focus {
   align-items: stretch;
 }
 .nav.bb {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--black);
+  background-color: var(--supportive);
+  border-bottom: 1px solid var(--primary);
 }
 .nav.shadow {
-  background-color: var(--white);
+  background-color: var(--supportive);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .nav.sticky {
@@ -309,7 +309,7 @@ select:focus {
   display: flex;
   align-items: center;
   padding: 1rem;
-  color: var(--black);
+  color: var(--primary);
   text-decoration: none;
 }
 .nav .brand {
@@ -327,23 +327,23 @@ select:focus {
   flex-direction: column;
 }
 .list-group-item {
-  background-color: var(--white);
+  background-color: var(--supportive);
   display: block;
   padding: 0.75rem 1.25rem;
-  border: 1px solid var(--black);
+  border: 1px solid var(--primary);
   margin-bottom: -1px;
 }
 .list-group-item.active {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--primary);
+  color: var(--supportive);
 }
 .list-group-item.disabled {
   opacity: 0.5;
 }
 .list-group-item:not(.active):hover,
 .list-group-item:not(.active):hover a {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--primary);
+  color: var(--supportive);
 }
 .text-left {
   text-align: left;
@@ -425,19 +425,19 @@ select:focus {
   width: 100%;
 }
 .card {
-  border: 2px solid var(--black);
-  box-shadow: 3px 4px 0 var(--black);
+  border: 2px solid var(--primary);
+  box-shadow: 3px 4px 0 var(--primary);
   transition: box-shadow 0.3s ease-in-out;
   margin: 0.2rem;
   padding: 1rem;
 }
 .card:hover {
-  box-shadow: -3px 4px 0 var(--black);
+  box-shadow: -3px 4px 0 var(--primary);
 }
 .msg {
   text-align: left;
   padding: 1rem;
-  border: 2px solid var(--black);
+  border: 2px solid var(--primary);
 }
 .msg-close {
   float: right;
@@ -458,36 +458,36 @@ select:focus {
   background-color: rgba(0,0,0,0.4);
 }
 .modal-close {
-  color: var(--black);
+  color: var(--primary);
   float: right;
   font-size: 2rem;
   font-weight: bold;
 }
 .modal-close:hover,
 .modal-close:focus {
-  color: var(--black);
+  color: var(--primary);
   text-decoration: none;
   cursor: pointer;
 }
 .modal-content {
   position: relative;
-  background-color: var(--white);
+  background-color: var(--supportive);
   margin: auto;
   padding: 0;
-  border: 2px solid var(--black);
+  border: 2px solid var(--primary);
   width: 70%;
-  box-shadow: 3px 4px 0px var(--black);
+  box-shadow: 3px 4px 0px var(--primary);
 }
 .modal-header {
   padding: 0.2rem 1rem;
-  color: var(--black);
-  border-bottom: 1px solid var(--black);
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
 }
 .modal-body {
   padding: 1rem;
 }
 .modal-footer {
   padding: 0.2rem 1rem;
-  color: var(--black);
-  border-top: 1px solid var(--black);
+  color: var(--primary);
+  border-top: 1px solid var(--primary);
 }
