@@ -1,7 +1,6 @@
 .text-box {
     outline: 0;
-    border: 2px solid var(--primary);
-    box-shadow: 3px 4px 0px var(--primary);
+    border: 1px solid var(--primary);
     transition: box-shadow 0.3s ease-in-out;
     padding: 0.5rem 0.8rem;
     display: inline-block;
@@ -10,26 +9,26 @@
 }
 .text-box:focus,
 .text-box:hover {
-    box-shadow: -3px 4px 0 var(--primary);
+    box-shadow: 3px 4px 0px var(--primary);
 }
 .text-box:disabled,
 .text-box.disabled {
     opacity: 0.5;
 }
 
-select {
+.option-box {
     outline: 0;
-    border: 2px solid var(--primary);
-    box-shadow: 3px 4px 0px var(--primary);
+    border: 1px solid var(--primary);
     transition: box-shadow 0.3s ease-in-out;
     display: inline-block;
     padding: .5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
-select:active,
-select:focus {
+.option-box:active,
+.option-box:focus {
     background: var(--supportive);
     color: var(--primary) !important;
-    border: 1px solid var(--primary);
-    box-shadow: -3px 4px 0 var(--primary);
+    box-shadow: 3px 4px 0px var(--primary);
     text-decoration: underline !important;
 }
