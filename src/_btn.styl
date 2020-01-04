@@ -1,36 +1,6 @@
 .btn {
     appearance: none;
     border: 1px solid var(--primary);
-    background-color: var(--primary);
-    border-radius: 0;
-
-    color: var(--supportive) !important;
-    cursor: pointer;
-    text-decoration: none !important;
-    outline: none;
-
-    padding: 0.5rem 0.8rem;
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-
-    box-shadow: 3px 4px 0px var(--primary);
-}
-.btn:focus,
-.btn:hover,
-.btn:active {
-    background: var(--supportive);
-    color: var(--primary) !important;
-    border: 1px solid var(--primary);
-    box-shadow: 3px 4px 0px var(--primary);
-    text-decoration: underline !important;
-}
-
-.i-btn {
-    appearance: none;
-    border: 1px solid var(--primary);
     background-color: var(--supportive);
     border-radius: 0;
 
@@ -48,6 +18,36 @@
 
     transition: box-shadow 0.3s ease-in-out;
 }
+.btn:focus,
+.btn:hover,
+.btn:active {
+    background: var(--supportive);
+    color: var(--primary) !important;
+    border: 1px solid var(--primary);
+    box-shadow: 3px 4px 0px var(--primary);
+    text-decoration: underline !important;
+}
+
+.i-btn {
+    appearance: none;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    border-radius: 0;
+
+    color: var(--supportive) !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    outline: none;
+
+    padding: 0.5rem 0.8rem;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+    box-shadow: 3px 4px 0px var(--primary);
+}
 .i-btn:focus,
 .i-btn:hover,
 .i-btn:active {
@@ -58,7 +58,9 @@
     text-decoration: underline !important;
 }
 
-.btn:disabled,
+.i-btn:disabled,
+.i-btn.disabled,
+.btn:disabled, 
 .btn.disabled {
     pointer-events: none;
     opacity: 0.5;

@@ -152,13 +152,33 @@ table.hover tbody tr:hover {
 }
 .container {
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   max-width: var(--container);
   margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .row {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col,
+[class^='col'] {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .col {
   flex: 1;
@@ -209,32 +229,6 @@ table.hover tbody tr:hover {
 .btn {
   appearance: none;
   border: 1px solid var(--primary);
-  background-color: var(--primary);
-  border-radius: 0;
-  color: var(--supportive) !important;
-  cursor: pointer;
-  text-decoration: none !important;
-  outline: none;
-  padding: 0.5rem 0.8rem;
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  box-shadow: 3px 4px 0px var(--primary);
-}
-.btn:focus,
-.btn:hover,
-.btn:active {
-  background: var(--supportive);
-  color: var(--primary) !important;
-  border: 1px solid var(--primary);
-  box-shadow: 3px 4px 0px var(--primary);
-  text-decoration: underline !important;
-}
-.i-btn {
-  appearance: none;
-  border: 1px solid var(--primary);
   background-color: var(--supportive);
   border-radius: 0;
   color: var(--primary) !important;
@@ -249,6 +243,32 @@ table.hover tbody tr:hover {
   margin-top: 0.5rem;
   transition: box-shadow 0.3s ease-in-out;
 }
+.btn:focus,
+.btn:hover,
+.btn:active {
+  background: var(--supportive);
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  box-shadow: 3px 4px 0px var(--primary);
+  text-decoration: underline !important;
+}
+.i-btn {
+  appearance: none;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  border-radius: 0;
+  color: var(--supportive) !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 3px 4px 0px var(--primary);
+}
 .i-btn:focus,
 .i-btn:hover,
 .i-btn:active {
@@ -258,6 +278,8 @@ table.hover tbody tr:hover {
   box-shadow: 3px 4px 0px var(--primary);
   text-decoration: underline !important;
 }
+.i-btn:disabled,
+.i-btn.disabled,
 .btn:disabled,
 .btn.disabled {
   pointer-events: none;
@@ -450,25 +472,69 @@ table.hover tbody tr:hover {
   width: 100%;
 }
 .card {
-  border: 2px solid var(--primary);
-  box-shadow: 3px 4px 0 var(--primary);
+  border: 1px solid var(--primary);
   transition: box-shadow 0.3s ease-in-out;
   margin: 0.2rem;
   padding: 1rem;
 }
 .card:hover {
-  box-shadow: -3px 4px 0 var(--primary);
+  box-shadow: 3px 4px 0 var(--primary);
 }
 .msg {
   text-align: left;
   padding: 1rem;
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
+  animation: border 2s infinite;
 }
 .msg-close {
   float: right;
 }
 .msg-close:hover {
   cursor: pointer;
+}
+@-moz-keyframes border {
+  0% {
+    border-color: #000;
+  }
+  50% {
+    border-color: rgba(0,0,0,0);
+  }
+  100% {
+    border-color: #000;
+  }
+}
+@-webkit-keyframes border {
+  0% {
+    border-color: #000;
+  }
+  50% {
+    border-color: rgba(0,0,0,0);
+  }
+  100% {
+    border-color: #000;
+  }
+}
+@-o-keyframes border {
+  0% {
+    border-color: #000;
+  }
+  50% {
+    border-color: rgba(0,0,0,0);
+  }
+  100% {
+    border-color: #000;
+  }
+}
+@keyframes border {
+  0% {
+    border-color: #000;
+  }
+  50% {
+    border-color: rgba(0,0,0,0);
+  }
+  100% {
+    border-color: #000;
+  }
 }
 .modal {
   display: none;
@@ -499,7 +565,7 @@ table.hover tbody tr:hover {
   background-color: var(--supportive);
   margin: auto;
   padding: 0;
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   width: 70%;
   box-shadow: 3px 4px 0px var(--primary);
 }

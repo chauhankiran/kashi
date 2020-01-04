@@ -1,11 +1,21 @@
 .msg {
     text-align: left;
     padding: 1rem;
-    border: 2px solid var(--primary);
+    border: 1px solid var(--primary);
+    animation: border 2s infinite;
 }
 .msg-close {
     float: right;
 }
 .msg-close:hover {
     cursor: pointer;
+}
+@keyframes border {
+    0% {
+        border-color: rgba(0, 0, 0, 1); 
+    } 50% {
+        border-color: rgba(0, 0, 0, 0);
+    } 100% {
+        border-color: rgba(0, 0, 0, 1);
+    }
 }
