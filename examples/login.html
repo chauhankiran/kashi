@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Login</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/kashi@latest">
+        <style>
+            .mt-3 {
+                margin-top: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="nav shadow sticky">
+            <div class="left">
+                <a href="#" class="brand">Brand</a>
+            </div>
+            <div class="right">
+                <a href="#" class="active">Login</a>
+                <a href="#">Join</a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <form class="col-6" method="POST">
+                        <h3 class="text-center">Login</h3>
+                        <input type="text" class="text-box lg" name="username" placeholder="Username">
+                        <input type="password" class="text-box lg" name="password" placeholder="Password">
+                        <button type="submit" class="btn lg">Login</button>
+                        <a href="#" class="lg text-right">Forgot password?</a>
+                    </form>
+
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

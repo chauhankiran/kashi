@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Kashi &mdash; The black & white style framework</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/kashi@latest">
+        <link href="prettify.css" rel="stylesheet">
+        <link href="docs.css" rel="stylesheet">
+    </head>
+    <body onload="prettyPrint()">
+
+        <!-- ===================
+             The navigation bar
+             ===================
+        -->
+        <nav class="nav shadow sticky">
+            <a href="#" class="brand">Kashi</a>
+            <a href="#">Overview</a>
+            <a href="#">About</a>
+            <a href="#">Grid</a>
+            <a href="#">Layout</a>
+            <a href="#">Type</a>
+            <a href="#">Care</a>
+            <a href="#">Tables</a>
+            <a href="#">Form Control</a>
+            <a href="#">Message</a>
+            <a href="#">Modal</a>
+
+            <div class="right">
+                <a  href="#">GitHub</a>
+            </div>
+        </nav>
+
+        <!-- ==============
+             The card
+             ==============
+        -->
+        <div class="container mt-1">
+            <header class="card text-center">
+                <h1>Kashi, The black & white style framework</h1>
+                <p class="text-italic text-big">
+                    Kashi is a style framework created with two colors in mind and simplicity as aim.<br>
+                    It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.<br />
+                </p>
+                <p><strong>Nerd alert:</strong> Kashi is <a href="http://stylus-lang.com/">built with Stylus</a> as hack to provides easy customization and to remove hurdle of set-up.</p>
+            </header>
+        </div>
+
+        <!-- ===================================
+             Getting Started with Kashi is easy.
+             ===================================
+        -->
+        <div class="container mt-1">
+            <div class="row">
+                <div class="col-7">
+                    <strong class="text-uppercase">Hotlink the CSS</strong>
+                    <p>For the quickest and easiest start, just copy this snippet into your webpage.</p>
+                    <pre class="prettyprint">&lt;link rel="stylesheet" href="https://unpkg.com/kashi@latest"&gt;</pre>
+                </div>
+                <div class="col-5">
+                    <strong class="text-uppercase">npm package</strong>
+                    <p>Install Kashi in your Node.js powered apps with the npm.</p>
+                    <pre class="prettyprint">$ npm i kashi</pre>
+                </div>
+            </div>
+        </div>
+
+        <!--=================
+            Bit about Kashi!
+            =================
+        -->
+        <div class="container">
+            <h2>About Kashi <small>Brief history, browser support, and more</small></h2>
+            <p>
+                Kashi was partially created as part of learning the inners of all popular styles frameworks. While creating one component at a time, it becomes so big that it stands for its own! 
+            </p>
+
+            <h3>Browser support</h3>
+            <p>Kashi is tested and supported in major modern browsers like Chrome, Brave, and Firefox.</p>
+            <ul>
+                <li>Latest Google Chrome</li>
+                <li>Latest  Firefox</li>
+                <li>Latest Brave</li>
+            </ul>
+
+            <h3>What's included</h3>
+            <p>Kashi comes complete with compiled CSS, uncompiled, and example templates.</p>
+            <ul>
+                <li>All original <code>.styl</code> files.</li>
+                <li>Fully compiled and minified CSS</li>
+                <li>Examples pages for each component</li>
+                <li>Three example pages with different layouts</li>
+                <li>Three themes</li>
+            </ul>
+        </div>
+
+        <!--============================
+            Some examples to start out.
+            ============================
+        -->
+        <div class="container">
+            <h2>Quick-start examples</h2>
+            <p>Need some quick templates? Check out these basic examples we've put together:</p>
+            <div class="row">
+                <div class="col-4">
+                    <a href="examples/starter-template.html">
+                        <img src="img/starter.png" alt="Starter template" width="80%">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="examples/login.html">
+                        <img src="img/login.png" alt="Login page template" width="80%">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="examples/dashboard.html">
+                        <img src="img/dashboard.png" alt="Dashboard" width="80%">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--============
+            Grid system
+            ============
+        -->
+        <div class="container">
+            <h2>Grid system <small>Magical grid system for you!</small></h2>
+            <div class="row">
+                <div class="col-4">
+                    <h3>Default grid</h3>
+                    <p>The default grid system provided as part of Kashi is a 60rem wide 12-column grid. It’s a flavor of the popular Bootstrap grid system, but with simplicity.</p>
+                </div>
+                <div class="col-8">
+                    <h3>Example grid markup</h3>
+                    <p>As shown here, a basic layout can be created with two "columns" each spanning a number of the 12 foundational columns we defined as part of our grid system. See the examples below for more variations.</p>
+<pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="col-6"&gt;
+    ...
+  &lt;/div&gt;
+  &lt;div class="col-6"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="container grid-demo">
+            <div class="row show-grid" title="12 column layout">
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+                <div class="col-1">1</div>
+            </div>
+
+            <div class="row show-grid" title="6 column layout">
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+            </div>
+
+            <div class="row show-grid" title="Four column layout">
+                <div class="col-3">3</div>
+                <div class="col-3">3</div>
+                <div class="col-3">3</div>
+                <div class="col-3">3</div>
+            </div>
+
+            <div class="row show-grid" title="Three column layout">
+                <div class="col-4">4</div>
+                <div class="col-4">4</div>
+                <div class="col-4">4</div>
+            </div>
+
+            <div class="row show-grid" title="Auto three column layout">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+
+            <div class="row show-grid" title="Irregular three column layout">
+                <div class="col-2">3</div>
+                <div class="col-5">5</div>
+                <div class="col-5">4</div>
+            </div>
+
+            <div class="row show-grid" title="Half and half">
+                <div class="col-6">6</div>
+                <div class="col-6">6</div>
+            </div>
+
+            <div class="row show-grid" title="Example uncommon two-column layout">
+                <div class="col-5">5</div>
+                <div class="col-7">7</div>
+            </div>
+
+            <div class="row show-grid" title="Unnecessary single column layout">
+                <div class="col-12">12</div>
+            </div>
+        </div>
+
+        <div class="container grid-demo">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Nesting columns</h3>
+                    <p>Nest your content if you must by creating a <code>.row</code> within an existing column.</p>
+                </div>
+                <div class="col-8">
+                    <h4>Example of nested columns</h4>
+                    <div class="row">
+                        <div class="col-12 text-center nest-col">
+                            Level 1 of column
+                            <div class="row ">
+                                <div class="col-6">
+                                    Level 2
+                                </div>
+                                <div class="col-6">
+                                    Level 2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="prettyprint linenums">&lt;div class="row"&gt;
+    &lt;div class="col-12"&gt;
+        Level 1 of column
+        &lt;div class="row"&gt;
+            &lt;div class="col-6"&gt;
+                Level 2
+            &lt;/div&gt;
+            &lt;div class="col-6"&gt;
+                Level 2
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================
+             Layouts (Default and fluid)
+             ==========================
+        -->
+        <div class="container">
+            <h2>Layouts <small>Basic templates to create webpages</small></h2>
+            <div class="row">
+                <div class="col-6">
+                    <h3>Fixed layout</h3>
+                    <p>The default and simple 60rem-wide, centered layout for just about any website or page provided by a single <code>&lt;div.container&gt;</code>.</p>
+                    <div class="mini-layout">
+                        <div class="mini-layout-body"></div>
+                    </div>
+                <pre class="prettyprint linenums">&lt;body&gt;
+    &lt;div class="container"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/body&gt;</pre>
+                </div>
+                <div class="col-6">
+                    <h3>Fluid layout</h3>
+                    <p>An alternative, flexible fluid page structure with min- and max-widths and a left-hand sidebar. Great for apps and docs.</p>
+                    <div class="mini-layout fluid">
+                        <div class="mini-layout-sidebar"></div>
+                        <div class="mini-layout-body"></div>
+                    </div>
+<pre class="prettyprint linenums">&lt;body&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;div class="sidebar"&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</pre>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ===========
+             Typography
+             ===========
+        -->
+        <div class="container">
+            <h2>Typography <small>Headings, paragraphs, lists, and other inline type elements</small></h2>
+            <div class="row">
+                <div class="col-3">
+                    <h3>Headings</h3>
+                    <p>A standard typographic hierarchy for structuring your webpages.</p>
+                    <p>The entire typographic grid is based on two Less variables in our variables.less file: <code>@basefont</code> and <code>@baseline</code>. The first is the base font-size used throughout and the second is the base line-height.</p>
+                    <p>We use those variables, and some math, to create the margins, paddings, and line-heights of all our type and more.</p>
+                </div>
+                <div class="col-3">
+                    <h1>h1. Text 1</h1>
+                    <h2>h2. Text 2</h2>
+                    <h3>h3. Text 3</h3>
+                    <h4>h4. Text 4</h4>
+                    <h5>h5. Text 5</h5>
+                    <h6>h6. Text 6</h6>
+                </div>
+                <div class="col-6">
+                    <h3>Example paragraph</h3>
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="prettify.min.js"></script>
+
+  </body>
+</html>
