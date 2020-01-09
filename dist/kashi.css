@@ -146,7 +146,7 @@ thead th {
 table.bordered {
   border: 1px solid var(--primary);
 }
-table.hover tbody tr:hover {
+table.hover tbody tr:hover a {
   background-color: var(--primary);
   color: var(--supportive);
 }
