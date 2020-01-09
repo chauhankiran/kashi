@@ -14,19 +14,22 @@
   --normal: 400;
   --light: 100;
   --bold: 700;
-  --h-weight: var(--normal);
+  --h-weight: var(--bold);
   --h1: 2.25rem;
   --h2: 1.875rem;
   --h3: 1.5rem;
   --h4: 1.25rem;
   --h5: 0.875rem;
   --h6: 0.75rem;
+  --a-color: var(--primary);
+  --a-hover-color: var(--primary);
   --a-decor: underline;
   --a-hover-decor: none;
   --container: 60rem;
   --mobile-container: 42rem;
   --nav-height: 2rem;
-  --nav-brand: var(--big);
+  --nav-brand-size: var(--big);
+  --nav-brand-color: var(--primary);
   --nav-active: underline;
 }
 *,
@@ -122,11 +125,11 @@ small {
   font-size: var(--small);
 }
 a {
-  color: var(--primary);
+  color: var(--a-color);
   text-decoration: var(--a-decor);
 }
 a:hover {
-  color: var(--primary);
+  color: var(--a-hover-color);
   text-decoration: var(--a-hover-decor);
 }
 table {
@@ -360,7 +363,8 @@ table.hover tbody tr:hover a {
   text-decoration: none;
 }
 .nav .brand {
-  font-size: var(--nav-brand);
+  color: var(--nav-brand-color);
+  font-size: var(--nav-brand-size);
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -470,6 +474,21 @@ table.hover tbody tr:hover a {
 .lg {
   display: block;
   width: 100%;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
 }
 .card {
   border: 1px solid var(--primary);
