@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Message</title>
+
+        <link rel="stylesheet" href="../dist/kashi.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <form action="" class="col-6" method="post">
+                    <h1 class="text-center">Messages</h1>
+                    <div class="msg">
+                        <span class="msg-close">
+                            &times;
+                        </span>
+                        Username or password is incorrect.
+                    </div>
+                    <input type="text" name="username" class="text-box lg" placeholder="Username">
+                    <input type="password" name="password" class="text-box lg" placeholder="Password">
+                    <button type="submit" class="btn lg">Login</button>
+                </form>
+                <div class="col-3"></div>
+            </div>
+        </div>
+        <script>
+            document.querySelector(".msg-close").addEventListener("click", function() {
+                document.querySelector(".msg").style.display = "none";
+            });
+        </script>
+    </body>
+</html>
