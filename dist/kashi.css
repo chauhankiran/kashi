@@ -483,21 +483,6 @@ table.hover tbody tr:hover {
   display: block;
   width: 100%;
 }
-.mt-1 {
-  margin-top: 1rem;
-}
-.mt-2 {
-  margin-top: 2rem;
-}
-.mt-3 {
-  margin-top: 3rem;
-}
-.mt-4 {
-  margin-top: 4rem;
-}
-.mt-5 {
-  margin-top: 5rem;
-}
 .card {
   border: 1px solid var(--primary);
   transition: box-shadow 0.3s ease-in-out;
@@ -608,4 +593,28 @@ table.hover tbody tr:hover {
   padding: 0.2rem 1rem;
   color: var(--primary);
   border-top: 1px solid var(--primary);
+}
+.m-margin {
+  margin: 0.25;
+}
+.m-margin {
+  margin: 0.5;
+}
+.m-margin {
+  margin: 0.75;
+}
+.m-margin {
+  margin: 1;
+}
+.m-margin {
+  margin: 2;
+}
+.m-margin {
+  margin: 3;
+}
+.m-margin {
+  margin: 4;
+}
+.m-margin {
+  margin: 5;
 }

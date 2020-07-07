@@ -1,67 +1,60 @@
-.btn {
-    appearance: none;
-    border: 1px solid var(--primary);
-    background-color: var(--supportive);
-    border-radius: 0;
+.btn
+  appearance: none;
+  border: 1px solid var(--primary);
+  background-color: var(--supportive);
+  border-radius: 0;
+  color: var(--primary) !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  transition: box-shadow 0.3s ease-in-out;
 
-    color: var(--primary) !important;
-    cursor: pointer;
-    text-decoration: none !important;
-    outline: none;
-
-    padding: 0.5rem 0.8rem;
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-
-    transition: box-shadow 0.3s ease-in-out;
-}
 .btn:focus,
 .btn:hover,
-.btn:active {
-    background: var(--supportive);
-    color: var(--primary) !important;
-    border: 1px solid var(--primary);
-    box-shadow: 3px 4px 0px var(--primary);
-    text-decoration: underline !important;
-}
+.btn:active
+  background: var(--supportive);
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  box-shadow: 3px 4px 0px var(--primary);
+  text-decoration: underline !important;
 
-.i-btn {
-    appearance: none;
-    border: 1px solid var(--primary);
-    background-color: var(--primary);
-    border-radius: 0;
+.i-btn
+  appearance: none;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  border-radius: 0;
+  color: var(--supportive) !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  outline: none;
 
-    color: var(--supportive) !important;
-    cursor: pointer;
-    text-decoration: none !important;
-    outline: none;
+  padding: 0.5rem 0.8rem;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  transition: box-shadow 0.3s ease-in-out;
 
-    padding: 0.5rem 0.8rem;
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-
-    transition: box-shadow 0.3s ease-in-out;
-}
 .i-btn:focus,
 .i-btn:hover,
-.i-btn:active {
-    background: var(--supportive);
-    color: var(--primary) !important;
-    border: 1px solid var(--primary);
-    box-shadow: 3px 4px 0px var(--primary);
-    text-decoration: underline !important;
-}
+.i-btn:active
+  background: var(--supportive);
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  box-shadow: 3px 4px 0px var(--primary);
+  text-decoration: underline !important;
 
 .i-btn:disabled,
 .i-btn.disabled,
-.btn:disabled, 
-.btn.disabled {
-    pointer-events: none;
-    opacity: 0.5;
-}
+.btn:disabled,
+.btn.disabled
+  pointer-events: none;
+  opacity: 0.5;
+
