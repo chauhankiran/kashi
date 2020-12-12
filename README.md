@@ -1,5 +1,7 @@
 # Kashi
 
+**Attention: The project is now archived. Please see [Gee](https://github.com/chauhankiran/gee) for latest changes.**
+
 > The black & white style framework
 
 ## Getting Started
